@@ -1,0 +1,676 @@
+New Storage.V2G_a_1   Bus1=1.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_2   Bus1=1.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_3   Bus1=1.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_1   Bus1=1.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_2   Bus1=1.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_3   Bus1=1.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_1   Bus1=1.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_2   Bus1=1.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_3   Bus1=1.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_4   Bus1=2.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_5   Bus1=2.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_4   Bus1=2.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_5   Bus1=2.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_4   Bus1=2.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_5   Bus1=2.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_6   Bus1=4.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_7   Bus1=4.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_8   Bus1=4.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_6   Bus1=4.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_7   Bus1=4.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_8   Bus1=4.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_6   Bus1=4.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_7   Bus1=4.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_8   Bus1=4.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_9   Bus1=5.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_10   Bus1=5.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_9   Bus1=5.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_10   Bus1=5.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_9   Bus1=5.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_10   Bus1=5.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_11   Bus1=6.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_12   Bus1=6.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_13   Bus1=6.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_11   Bus1=6.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_12   Bus1=6.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_13   Bus1=6.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_11   Bus1=6.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_12   Bus1=6.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_13   Bus1=6.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_14   Bus1=7.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_15   Bus1=7.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_14   Bus1=7.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_15   Bus1=7.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_14   Bus1=7.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_15   Bus1=7.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_16   Bus1=9.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_17   Bus1=9.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_18   Bus1=9.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_16   Bus1=9.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_17   Bus1=9.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_18   Bus1=9.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_16   Bus1=9.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_17   Bus1=9.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_18   Bus1=9.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_19   Bus1=10.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_20   Bus1=10.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_19   Bus1=10.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_20   Bus1=10.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_19   Bus1=10.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_20   Bus1=10.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_21   Bus1=11.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_22   Bus1=11.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_23   Bus1=11.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_21   Bus1=11.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_22   Bus1=11.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_23   Bus1=11.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_21   Bus1=11.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_22   Bus1=11.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_23   Bus1=11.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_24   Bus1=12.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_25   Bus1=12.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_24   Bus1=12.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_25   Bus1=12.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_24   Bus1=12.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_25   Bus1=12.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_26   Bus1=16.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_27   Bus1=16.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_28   Bus1=16.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_26   Bus1=16.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_27   Bus1=16.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_28   Bus1=16.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_26   Bus1=16.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_27   Bus1=16.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_28   Bus1=16.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_29   Bus1=17.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_30   Bus1=17.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_29   Bus1=17.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_30   Bus1=17.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_29   Bus1=17.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_30   Bus1=17.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_31   Bus1=19.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_32   Bus1=19.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_33   Bus1=19.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_31   Bus1=19.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_32   Bus1=19.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_33   Bus1=19.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_31   Bus1=19.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_32   Bus1=19.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_33   Bus1=19.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_34   Bus1=20.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_35   Bus1=20.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_36   Bus1=20.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_34   Bus1=20.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_35   Bus1=20.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_36   Bus1=20.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_34   Bus1=20.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_35   Bus1=20.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_36   Bus1=20.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_37   Bus1=22.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_38   Bus1=22.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_39   Bus1=22.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_37   Bus1=22.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_38   Bus1=22.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_39   Bus1=22.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_37   Bus1=22.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_38   Bus1=22.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_39   Bus1=22.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_40   Bus1=24.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_41   Bus1=24.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_42   Bus1=24.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_40   Bus1=24.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_41   Bus1=24.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_42   Bus1=24.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_40   Bus1=24.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_41   Bus1=24.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_42   Bus1=24.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_43   Bus1=28.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_44   Bus1=28.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_45   Bus1=28.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_43   Bus1=28.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_44   Bus1=28.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_45   Bus1=28.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_43   Bus1=28.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_44   Bus1=28.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_45   Bus1=28.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_46   Bus1=29.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_47   Bus1=29.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_48   Bus1=29.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_46   Bus1=29.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_47   Bus1=29.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_48   Bus1=29.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_46   Bus1=29.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_47   Bus1=29.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_48   Bus1=29.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_49   Bus1=30.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_50   Bus1=30.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_51   Bus1=30.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_49   Bus1=30.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_50   Bus1=30.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_51   Bus1=30.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_49   Bus1=30.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_50   Bus1=30.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_51   Bus1=30.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_52   Bus1=31.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_52   Bus1=31.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_52   Bus1=31.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_53   Bus1=31.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_53   Bus1=31.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_53   Bus1=31.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_54   Bus1=32.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_54   Bus1=32.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_54   Bus1=32.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_55   Bus1=32.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_55   Bus1=32.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_55   Bus1=32.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_56   Bus1=33.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_56   Bus1=33.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_56   Bus1=33.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_57   Bus1=33.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_57   Bus1=33.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_57   Bus1=33.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_58   Bus1=33.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_58   Bus1=33.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_58   Bus1=33.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_59   Bus1=34.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_59   Bus1=34.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_59   Bus1=34.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_60   Bus1=34.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_60   Bus1=34.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_60   Bus1=34.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_61   Bus1=34.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_61   Bus1=34.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_61   Bus1=34.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_62   Bus1=37.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_62   Bus1=37.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_62   Bus1=37.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_63   Bus1=37.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_63   Bus1=37.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_63   Bus1=37.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_64   Bus1=37.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_64   Bus1=37.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_64   Bus1=37.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_65   Bus1=38.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_65   Bus1=38.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_65   Bus1=38.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_66   Bus1=38.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_66   Bus1=38.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_66   Bus1=38.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_67   Bus1=39.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_67   Bus1=39.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_67   Bus1=39.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_68   Bus1=39.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_68   Bus1=39.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_68   Bus1=39.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_69   Bus1=41.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_69   Bus1=41.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_69   Bus1=41.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_70   Bus1=41.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_70   Bus1=41.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_70   Bus1=41.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_71   Bus1=42.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_71   Bus1=42.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_71   Bus1=42.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_72   Bus1=42.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_72   Bus1=42.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_72   Bus1=42.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_73   Bus1=43.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_73   Bus1=43.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_73   Bus1=43.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_74   Bus1=43.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_74   Bus1=43.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_74   Bus1=43.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_75   Bus1=43.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_75   Bus1=43.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_75   Bus1=43.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_76   Bus1=45.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_76   Bus1=45.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_76   Bus1=45.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_77   Bus1=45.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_77   Bus1=45.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_77   Bus1=45.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_78   Bus1=46.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_78   Bus1=46.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_78   Bus1=46.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_79   Bus1=46.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_79   Bus1=46.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_79   Bus1=46.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_80   Bus1=50.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_80   Bus1=50.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_80   Bus1=50.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_81   Bus1=50.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_81   Bus1=50.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_81   Bus1=50.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_82   Bus1=50.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_82   Bus1=50.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_82   Bus1=50.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_83   Bus1=51.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_83   Bus1=51.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_83   Bus1=51.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_84   Bus1=51.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_84   Bus1=51.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_84   Bus1=51.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_85   Bus1=52.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_85   Bus1=52.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_85   Bus1=52.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_86   Bus1=52.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_86   Bus1=52.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_86   Bus1=52.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_87   Bus1=52.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_87   Bus1=52.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_87   Bus1=52.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_88   Bus1=53.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_88   Bus1=53.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_88   Bus1=53.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_89   Bus1=53.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_89   Bus1=53.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_89   Bus1=53.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_90   Bus1=53.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_90   Bus1=53.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_90   Bus1=53.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_91   Bus1=55.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_91   Bus1=55.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_91   Bus1=55.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_92   Bus1=55.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_92   Bus1=55.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_92   Bus1=55.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_93   Bus1=56.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_93   Bus1=56.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_93   Bus1=56.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_94   Bus1=56.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_94   Bus1=56.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_94   Bus1=56.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_95   Bus1=58.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_95   Bus1=58.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_95   Bus1=58.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_96   Bus1=58.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_96   Bus1=58.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_96   Bus1=58.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_97   Bus1=59.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_97   Bus1=59.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_97   Bus1=59.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_98   Bus1=59.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_98   Bus1=59.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_98   Bus1=59.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_99   Bus1=60.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_99   Bus1=60.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_99   Bus1=60.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_100   Bus1=60.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_100   Bus1=60.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_100   Bus1=60.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_101   Bus1=62.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_101   Bus1=62.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_101   Bus1=62.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_102   Bus1=62.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_102   Bus1=62.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_102   Bus1=62.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_103   Bus1=62.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_103   Bus1=62.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_103   Bus1=62.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_104   Bus1=63.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_104   Bus1=63.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_104   Bus1=63.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_105   Bus1=63.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_105   Bus1=63.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_105   Bus1=63.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_106   Bus1=63.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_106   Bus1=63.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_106   Bus1=63.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_107   Bus1=68.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_107   Bus1=68.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_107   Bus1=68.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_108   Bus1=68.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_108   Bus1=68.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_108   Bus1=68.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_109   Bus1=69.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_109   Bus1=69.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_109   Bus1=69.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_110   Bus1=69.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_110   Bus1=69.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_110   Bus1=69.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_111   Bus1=69.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_111   Bus1=69.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_111   Bus1=69.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_112   Bus1=70.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_112   Bus1=70.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_112   Bus1=70.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_113   Bus1=70.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_113   Bus1=70.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_113   Bus1=70.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_114   Bus1=71.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_114   Bus1=71.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_114   Bus1=71.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_115   Bus1=71.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_115   Bus1=71.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_115   Bus1=71.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_116   Bus1=71.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_116   Bus1=71.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_116   Bus1=71.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_117   Bus1=73.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_117   Bus1=73.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_117   Bus1=73.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_118   Bus1=73.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_118   Bus1=73.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_118   Bus1=73.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_119   Bus1=73.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_119   Bus1=73.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_119   Bus1=73.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_120   Bus1=74.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_120   Bus1=74.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_120   Bus1=74.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_121   Bus1=74.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_121   Bus1=74.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_121   Bus1=74.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_122   Bus1=74.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_122   Bus1=74.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_122   Bus1=74.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_123   Bus1=75.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_123   Bus1=75.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_123   Bus1=75.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_124   Bus1=75.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_124   Bus1=75.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_124   Bus1=75.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_125   Bus1=75.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_125   Bus1=75.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_125   Bus1=75.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_126   Bus1=77.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_126   Bus1=77.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_126   Bus1=77.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_127   Bus1=77.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_127   Bus1=77.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_127   Bus1=77.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_128   Bus1=77.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_128   Bus1=77.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_128   Bus1=77.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_129   Bus1=79.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_129   Bus1=79.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_129   Bus1=79.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_130   Bus1=79.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_130   Bus1=79.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_130   Bus1=79.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_131   Bus1=79.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_131   Bus1=79.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_131   Bus1=79.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_132   Bus1=80.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_132   Bus1=80.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_132   Bus1=80.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_133   Bus1=80.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_133   Bus1=80.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_133   Bus1=80.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_134   Bus1=80.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_134   Bus1=80.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_134   Bus1=80.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_135   Bus1=82.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_135   Bus1=82.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_135   Bus1=82.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_136   Bus1=82.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_136   Bus1=82.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_136   Bus1=82.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_137   Bus1=82.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_137   Bus1=82.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_137   Bus1=82.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_138   Bus1=83.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_138   Bus1=83.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_138   Bus1=83.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_139   Bus1=83.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_139   Bus1=83.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_139   Bus1=83.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_140   Bus1=84.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_140   Bus1=84.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_140   Bus1=84.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_141   Bus1=84.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_141   Bus1=84.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_141   Bus1=84.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_142   Bus1=85.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_142   Bus1=85.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_142   Bus1=85.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_143   Bus1=85.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_143   Bus1=85.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_143   Bus1=85.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_144   Bus1=85.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_144   Bus1=85.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_144   Bus1=85.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_145   Bus1=86.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_145   Bus1=86.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_145   Bus1=86.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_146   Bus1=86.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_146   Bus1=86.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_146   Bus1=86.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_147   Bus1=87.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_147   Bus1=87.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_147   Bus1=87.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_148   Bus1=87.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_148   Bus1=87.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_148   Bus1=87.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_149   Bus1=87.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_149   Bus1=87.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_149   Bus1=87.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_150   Bus1=88.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_150   Bus1=88.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_150   Bus1=88.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_151   Bus1=88.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_151   Bus1=88.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_151   Bus1=88.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_152   Bus1=88.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_152   Bus1=88.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_152   Bus1=88.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_153   Bus1=90.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_153   Bus1=90.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_153   Bus1=90.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_154   Bus1=90.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_154   Bus1=90.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_154   Bus1=90.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_155   Bus1=90.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_155   Bus1=90.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_155   Bus1=90.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_156   Bus1=92.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_156   Bus1=92.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_156   Bus1=92.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_157   Bus1=92.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_157   Bus1=92.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_157   Bus1=92.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_158   Bus1=92.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_158   Bus1=92.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_158   Bus1=92.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_159   Bus1=94.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_159   Bus1=94.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_159   Bus1=94.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_160   Bus1=94.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_160   Bus1=94.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_160   Bus1=94.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_161   Bus1=94.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_161   Bus1=94.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_161   Bus1=94.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_162   Bus1=95.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_162   Bus1=95.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_162   Bus1=95.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_163   Bus1=95.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_163   Bus1=95.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_163   Bus1=95.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_164   Bus1=96.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_164   Bus1=96.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_164   Bus1=96.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_165   Bus1=96.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_165   Bus1=96.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_165   Bus1=96.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_166   Bus1=98.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_166   Bus1=98.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_166   Bus1=98.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_167   Bus1=98.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_167   Bus1=98.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_167   Bus1=98.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_168   Bus1=98.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_168   Bus1=98.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_168   Bus1=98.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_169   Bus1=99.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_169   Bus1=99.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_169   Bus1=99.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_170   Bus1=99.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_170   Bus1=99.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_170   Bus1=99.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_171   Bus1=99.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_171   Bus1=99.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_171   Bus1=99.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_172   Bus1=100.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_172   Bus1=100.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_172   Bus1=100.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_173   Bus1=100.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_173   Bus1=100.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_173   Bus1=100.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_174   Bus1=100.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_174   Bus1=100.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_174   Bus1=100.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_175   Bus1=102.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_175   Bus1=102.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_175   Bus1=102.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_176   Bus1=102.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_176   Bus1=102.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_176   Bus1=102.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_177   Bus1=103.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_177   Bus1=103.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_177   Bus1=103.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_178   Bus1=103.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_178   Bus1=103.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_178   Bus1=103.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_179   Bus1=103.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_179   Bus1=103.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_179   Bus1=103.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_180   Bus1=104.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_180   Bus1=104.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_180   Bus1=104.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_181   Bus1=104.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_181   Bus1=104.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_181   Bus1=104.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_182   Bus1=104.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_182   Bus1=104.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_182   Bus1=104.3    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_183   Bus1=106.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_183   Bus1=106.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_183   Bus1=106.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_184   Bus1=106.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_184   Bus1=106.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_184   Bus1=106.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_185   Bus1=106.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_185   Bus1=106.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_185   Bus1=106.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_186   Bus1=107.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_186   Bus1=107.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_186   Bus1=107.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_187   Bus1=107.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_187   Bus1=107.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_187   Bus1=107.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_188   Bus1=107.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_188   Bus1=107.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_188   Bus1=107.2    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_189   Bus1=109.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_189   Bus1=109.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_189   Bus1=109.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_190   Bus1=109.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_190   Bus1=109.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_190   Bus1=109.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_191   Bus1=109.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_191   Bus1=109.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_191   Bus1=109.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_192   Bus1=111.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_192   Bus1=111.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_192   Bus1=111.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_193   Bus1=111.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_193   Bus1=111.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_193   Bus1=111.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_194   Bus1=112.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_194   Bus1=112.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_194   Bus1=112.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_195   Bus1=112.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_195   Bus1=112.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_195   Bus1=112.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_196   Bus1=113.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_196   Bus1=113.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_196   Bus1=113.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_197   Bus1=113.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_197   Bus1=113.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_197   Bus1=113.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_198   Bus1=113.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_198   Bus1=113.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_198   Bus1=113.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+
+New Storage.V2G_a_199   Bus1=114.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_199   Bus1=114.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_199   Bus1=114.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_a_200   Bus1=114.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_b_200   Bus1=114.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING
+New Storage.V2G_c_200   Bus1=114.1    Phases=1 conn=Wye kV=2.4 kWRated=7 kWhRated=70 %reserve=10 %EffCharge=95 %EffDischarge=95 %stored=80 State=IDLING

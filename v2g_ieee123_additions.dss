@@ -1,0 +1,1565 @@
+
+! ===================================================================
+! IEEE 123-bus — V2G Storage additions (auto-generated)
+! Each listed load bus gets 10 V2G chargers modeled as Storage (ESS).
+! Assumptions (edit as needed):
+!   - kWRated = 7 kW per charger
+!   - kWhRated = 70 kWh per charger
+!   - %reserve = 10 (kept in the battery, not dispatched)
+!   - Efficiencies: %EffCharge=95, %EffDischarge=95
+!   - Control: StorageController Mode=FOLLOW tracking kWTargetShape=V2G_<LoadName>
+!              Positive kW in the CSV => discharge to the grid (V2G)
+!              Negative kW in the CSV => charging from the grid
+!   - The CSV files should be placed alongside the DSS files and named exactly V2G_<LoadName>.csv
+!   - Phases/Conn/Bus1/kV match the parent Load.* element
+! Usage:
+!   - After compiling the base IEEE123 DSS, `Redirect` this file OR `Compile` it after the base circuit.
+! ===================================================================
+
+
+! --- Profiles for V2G_S1a (expects file "V2G_S1a.csv")
+New Loadshape.V2G_S1a csvfile="V2G_S1a.csv"
+
+New Storage.V2G_S1a_01  phases=1  bus1=1.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S1a_02  phases=1  bus1=1.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S1a_03  phases=1  bus1=1.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S1a_04  phases=1  bus1=1.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S1a_05  phases=1  bus1=1.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S1a_06  phases=1  bus1=1.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S1a_07  phases=1  bus1=1.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S1a_08  phases=1  bus1=1.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S1a_09  phases=1  bus1=1.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S1a_10  phases=1  bus1=1.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S1a  Mode=FOLLOW  kWTargetShape=V2G_S1a  ElementList=(Storage.V2G_S1a_01 Storage.V2G_S1a_02 Storage.V2G_S1a_03 Storage.V2G_S1a_04 Storage.V2G_S1a_05 Storage.V2G_S1a_06 Storage.V2G_S1a_07 Storage.V2G_S1a_08 Storage.V2G_S1a_09 Storage.V2G_S1a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S2b (expects file "V2G_S2b.csv")
+New Loadshape.V2G_S2b csvfile="V2G_S2b.csv"
+
+New Storage.V2G_S2b_01  phases=1  bus1=2.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S2b_02  phases=1  bus1=2.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S2b_03  phases=1  bus1=2.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S2b_04  phases=1  bus1=2.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S2b_05  phases=1  bus1=2.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S2b_06  phases=1  bus1=2.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S2b_07  phases=1  bus1=2.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S2b_08  phases=1  bus1=2.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S2b_09  phases=1  bus1=2.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S2b_10  phases=1  bus1=2.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S2b  Mode=FOLLOW  kWTargetShape=V2G_S2b  ElementList=(Storage.V2G_S2b_01 Storage.V2G_S2b_02 Storage.V2G_S2b_03 Storage.V2G_S2b_04 Storage.V2G_S2b_05 Storage.V2G_S2b_06 Storage.V2G_S2b_07 Storage.V2G_S2b_08 Storage.V2G_S2b_09 Storage.V2G_S2b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S4c (expects file "V2G_S4c.csv")
+New Loadshape.V2G_S4c csvfile="V2G_S4c.csv"
+
+New Storage.V2G_S4c_01  phases=1  bus1=4.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S4c_02  phases=1  bus1=4.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S4c_03  phases=1  bus1=4.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S4c_04  phases=1  bus1=4.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S4c_05  phases=1  bus1=4.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S4c_06  phases=1  bus1=4.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S4c_07  phases=1  bus1=4.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S4c_08  phases=1  bus1=4.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S4c_09  phases=1  bus1=4.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S4c_10  phases=1  bus1=4.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S4c  Mode=FOLLOW  kWTargetShape=V2G_S4c  ElementList=(Storage.V2G_S4c_01 Storage.V2G_S4c_02 Storage.V2G_S4c_03 Storage.V2G_S4c_04 Storage.V2G_S4c_05 Storage.V2G_S4c_06 Storage.V2G_S4c_07 Storage.V2G_S4c_08 Storage.V2G_S4c_09 Storage.V2G_S4c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S5c (expects file "V2G_S5c.csv")
+New Loadshape.V2G_S5c csvfile="V2G_S5c.csv"
+
+New Storage.V2G_S5c_01  phases=1  bus1=5.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S5c_02  phases=1  bus1=5.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S5c_03  phases=1  bus1=5.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S5c_04  phases=1  bus1=5.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S5c_05  phases=1  bus1=5.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S5c_06  phases=1  bus1=5.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S5c_07  phases=1  bus1=5.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S5c_08  phases=1  bus1=5.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S5c_09  phases=1  bus1=5.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S5c_10  phases=1  bus1=5.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S5c  Mode=FOLLOW  kWTargetShape=V2G_S5c  ElementList=(Storage.V2G_S5c_01 Storage.V2G_S5c_02 Storage.V2G_S5c_03 Storage.V2G_S5c_04 Storage.V2G_S5c_05 Storage.V2G_S5c_06 Storage.V2G_S5c_07 Storage.V2G_S5c_08 Storage.V2G_S5c_09 Storage.V2G_S5c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S6c (expects file "V2G_S6c.csv")
+New Loadshape.V2G_S6c csvfile="V2G_S6c.csv"
+
+New Storage.V2G_S6c_01  phases=1  bus1=6.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S6c_02  phases=1  bus1=6.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S6c_03  phases=1  bus1=6.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S6c_04  phases=1  bus1=6.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S6c_05  phases=1  bus1=6.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S6c_06  phases=1  bus1=6.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S6c_07  phases=1  bus1=6.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S6c_08  phases=1  bus1=6.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S6c_09  phases=1  bus1=6.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S6c_10  phases=1  bus1=6.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S6c  Mode=FOLLOW  kWTargetShape=V2G_S6c  ElementList=(Storage.V2G_S6c_01 Storage.V2G_S6c_02 Storage.V2G_S6c_03 Storage.V2G_S6c_04 Storage.V2G_S6c_05 Storage.V2G_S6c_06 Storage.V2G_S6c_07 Storage.V2G_S6c_08 Storage.V2G_S6c_09 Storage.V2G_S6c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S7a (expects file "V2G_S7a.csv")
+New Loadshape.V2G_S7a csvfile="V2G_S7a.csv"
+
+New Storage.V2G_S7a_01  phases=1  bus1=7.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S7a_02  phases=1  bus1=7.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S7a_03  phases=1  bus1=7.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S7a_04  phases=1  bus1=7.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S7a_05  phases=1  bus1=7.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S7a_06  phases=1  bus1=7.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S7a_07  phases=1  bus1=7.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S7a_08  phases=1  bus1=7.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S7a_09  phases=1  bus1=7.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S7a_10  phases=1  bus1=7.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S7a  Mode=FOLLOW  kWTargetShape=V2G_S7a  ElementList=(Storage.V2G_S7a_01 Storage.V2G_S7a_02 Storage.V2G_S7a_03 Storage.V2G_S7a_04 Storage.V2G_S7a_05 Storage.V2G_S7a_06 Storage.V2G_S7a_07 Storage.V2G_S7a_08 Storage.V2G_S7a_09 Storage.V2G_S7a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S9a (expects file "V2G_S9a.csv")
+New Loadshape.V2G_S9a csvfile="V2G_S9a.csv"
+
+New Storage.V2G_S9a_01  phases=1  bus1=9.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S9a_02  phases=1  bus1=9.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S9a_03  phases=1  bus1=9.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S9a_04  phases=1  bus1=9.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S9a_05  phases=1  bus1=9.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S9a_06  phases=1  bus1=9.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S9a_07  phases=1  bus1=9.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S9a_08  phases=1  bus1=9.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S9a_09  phases=1  bus1=9.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S9a_10  phases=1  bus1=9.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S9a  Mode=FOLLOW  kWTargetShape=V2G_S9a  ElementList=(Storage.V2G_S9a_01 Storage.V2G_S9a_02 Storage.V2G_S9a_03 Storage.V2G_S9a_04 Storage.V2G_S9a_05 Storage.V2G_S9a_06 Storage.V2G_S9a_07 Storage.V2G_S9a_08 Storage.V2G_S9a_09 Storage.V2G_S9a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S10a (expects file "V2G_S10a.csv")
+New Loadshape.V2G_S10a csvfile="V2G_S10a.csv"
+
+New Storage.V2G_S10a_01  phases=1  bus1=10.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S10a_02  phases=1  bus1=10.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S10a_03  phases=1  bus1=10.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S10a_04  phases=1  bus1=10.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S10a_05  phases=1  bus1=10.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S10a_06  phases=1  bus1=10.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S10a_07  phases=1  bus1=10.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S10a_08  phases=1  bus1=10.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S10a_09  phases=1  bus1=10.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S10a_10  phases=1  bus1=10.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S10a  Mode=FOLLOW  kWTargetShape=V2G_S10a  ElementList=(Storage.V2G_S10a_01 Storage.V2G_S10a_02 Storage.V2G_S10a_03 Storage.V2G_S10a_04 Storage.V2G_S10a_05 Storage.V2G_S10a_06 Storage.V2G_S10a_07 Storage.V2G_S10a_08 Storage.V2G_S10a_09 Storage.V2G_S10a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S11a (expects file "V2G_S11a.csv")
+New Loadshape.V2G_S11a csvfile="V2G_S11a.csv"
+
+New Storage.V2G_S11a_01  phases=1  bus1=11.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S11a_02  phases=1  bus1=11.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S11a_03  phases=1  bus1=11.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S11a_04  phases=1  bus1=11.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S11a_05  phases=1  bus1=11.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S11a_06  phases=1  bus1=11.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S11a_07  phases=1  bus1=11.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S11a_08  phases=1  bus1=11.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S11a_09  phases=1  bus1=11.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S11a_10  phases=1  bus1=11.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S11a  Mode=FOLLOW  kWTargetShape=V2G_S11a  ElementList=(Storage.V2G_S11a_01 Storage.V2G_S11a_02 Storage.V2G_S11a_03 Storage.V2G_S11a_04 Storage.V2G_S11a_05 Storage.V2G_S11a_06 Storage.V2G_S11a_07 Storage.V2G_S11a_08 Storage.V2G_S11a_09 Storage.V2G_S11a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S12b (expects file "V2G_S12b.csv")
+New Loadshape.V2G_S12b csvfile="V2G_S12b.csv"
+
+New Storage.V2G_S12b_01  phases=1  bus1=12.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S12b_02  phases=1  bus1=12.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S12b_03  phases=1  bus1=12.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S12b_04  phases=1  bus1=12.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S12b_05  phases=1  bus1=12.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S12b_06  phases=1  bus1=12.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S12b_07  phases=1  bus1=12.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S12b_08  phases=1  bus1=12.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S12b_09  phases=1  bus1=12.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S12b_10  phases=1  bus1=12.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S12b  Mode=FOLLOW  kWTargetShape=V2G_S12b  ElementList=(Storage.V2G_S12b_01 Storage.V2G_S12b_02 Storage.V2G_S12b_03 Storage.V2G_S12b_04 Storage.V2G_S12b_05 Storage.V2G_S12b_06 Storage.V2G_S12b_07 Storage.V2G_S12b_08 Storage.V2G_S12b_09 Storage.V2G_S12b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S16c (expects file "V2G_S16c.csv")
+New Loadshape.V2G_S16c csvfile="V2G_S16c.csv"
+
+New Storage.V2G_S16c_01  phases=1  bus1=16.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S16c_02  phases=1  bus1=16.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S16c_03  phases=1  bus1=16.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S16c_04  phases=1  bus1=16.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S16c_05  phases=1  bus1=16.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S16c_06  phases=1  bus1=16.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S16c_07  phases=1  bus1=16.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S16c_08  phases=1  bus1=16.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S16c_09  phases=1  bus1=16.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S16c_10  phases=1  bus1=16.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S16c  Mode=FOLLOW  kWTargetShape=V2G_S16c  ElementList=(Storage.V2G_S16c_01 Storage.V2G_S16c_02 Storage.V2G_S16c_03 Storage.V2G_S16c_04 Storage.V2G_S16c_05 Storage.V2G_S16c_06 Storage.V2G_S16c_07 Storage.V2G_S16c_08 Storage.V2G_S16c_09 Storage.V2G_S16c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S17c (expects file "V2G_S17c.csv")
+New Loadshape.V2G_S17c csvfile="V2G_S17c.csv"
+
+New Storage.V2G_S17c_01  phases=1  bus1=17.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S17c_02  phases=1  bus1=17.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S17c_03  phases=1  bus1=17.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S17c_04  phases=1  bus1=17.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S17c_05  phases=1  bus1=17.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S17c_06  phases=1  bus1=17.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S17c_07  phases=1  bus1=17.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S17c_08  phases=1  bus1=17.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S17c_09  phases=1  bus1=17.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S17c_10  phases=1  bus1=17.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S17c  Mode=FOLLOW  kWTargetShape=V2G_S17c  ElementList=(Storage.V2G_S17c_01 Storage.V2G_S17c_02 Storage.V2G_S17c_03 Storage.V2G_S17c_04 Storage.V2G_S17c_05 Storage.V2G_S17c_06 Storage.V2G_S17c_07 Storage.V2G_S17c_08 Storage.V2G_S17c_09 Storage.V2G_S17c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S19a (expects file "V2G_S19a.csv")
+New Loadshape.V2G_S19a csvfile="V2G_S19a.csv"
+
+New Storage.V2G_S19a_01  phases=1  bus1=19.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S19a_02  phases=1  bus1=19.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S19a_03  phases=1  bus1=19.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S19a_04  phases=1  bus1=19.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S19a_05  phases=1  bus1=19.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S19a_06  phases=1  bus1=19.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S19a_07  phases=1  bus1=19.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S19a_08  phases=1  bus1=19.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S19a_09  phases=1  bus1=19.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S19a_10  phases=1  bus1=19.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S19a  Mode=FOLLOW  kWTargetShape=V2G_S19a  ElementList=(Storage.V2G_S19a_01 Storage.V2G_S19a_02 Storage.V2G_S19a_03 Storage.V2G_S19a_04 Storage.V2G_S19a_05 Storage.V2G_S19a_06 Storage.V2G_S19a_07 Storage.V2G_S19a_08 Storage.V2G_S19a_09 Storage.V2G_S19a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S20a (expects file "V2G_S20a.csv")
+New Loadshape.V2G_S20a csvfile="V2G_S20a.csv"
+
+New Storage.V2G_S20a_01  phases=1  bus1=20.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S20a_02  phases=1  bus1=20.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S20a_03  phases=1  bus1=20.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S20a_04  phases=1  bus1=20.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S20a_05  phases=1  bus1=20.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S20a_06  phases=1  bus1=20.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S20a_07  phases=1  bus1=20.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S20a_08  phases=1  bus1=20.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S20a_09  phases=1  bus1=20.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S20a_10  phases=1  bus1=20.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S20a  Mode=FOLLOW  kWTargetShape=V2G_S20a  ElementList=(Storage.V2G_S20a_01 Storage.V2G_S20a_02 Storage.V2G_S20a_03 Storage.V2G_S20a_04 Storage.V2G_S20a_05 Storage.V2G_S20a_06 Storage.V2G_S20a_07 Storage.V2G_S20a_08 Storage.V2G_S20a_09 Storage.V2G_S20a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S22b (expects file "V2G_S22b.csv")
+New Loadshape.V2G_S22b csvfile="V2G_S22b.csv"
+
+New Storage.V2G_S22b_01  phases=1  bus1=22.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S22b_02  phases=1  bus1=22.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S22b_03  phases=1  bus1=22.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S22b_04  phases=1  bus1=22.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S22b_05  phases=1  bus1=22.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S22b_06  phases=1  bus1=22.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S22b_07  phases=1  bus1=22.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S22b_08  phases=1  bus1=22.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S22b_09  phases=1  bus1=22.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S22b_10  phases=1  bus1=22.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S22b  Mode=FOLLOW  kWTargetShape=V2G_S22b  ElementList=(Storage.V2G_S22b_01 Storage.V2G_S22b_02 Storage.V2G_S22b_03 Storage.V2G_S22b_04 Storage.V2G_S22b_05 Storage.V2G_S22b_06 Storage.V2G_S22b_07 Storage.V2G_S22b_08 Storage.V2G_S22b_09 Storage.V2G_S22b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S24c (expects file "V2G_S24c.csv")
+New Loadshape.V2G_S24c csvfile="V2G_S24c.csv"
+
+New Storage.V2G_S24c_01  phases=1  bus1=24.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S24c_02  phases=1  bus1=24.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S24c_03  phases=1  bus1=24.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S24c_04  phases=1  bus1=24.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S24c_05  phases=1  bus1=24.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S24c_06  phases=1  bus1=24.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S24c_07  phases=1  bus1=24.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S24c_08  phases=1  bus1=24.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S24c_09  phases=1  bus1=24.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S24c_10  phases=1  bus1=24.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S24c  Mode=FOLLOW  kWTargetShape=V2G_S24c  ElementList=(Storage.V2G_S24c_01 Storage.V2G_S24c_02 Storage.V2G_S24c_03 Storage.V2G_S24c_04 Storage.V2G_S24c_05 Storage.V2G_S24c_06 Storage.V2G_S24c_07 Storage.V2G_S24c_08 Storage.V2G_S24c_09 Storage.V2G_S24c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S28a (expects file "V2G_S28a.csv")
+New Loadshape.V2G_S28a csvfile="V2G_S28a.csv"
+
+New Storage.V2G_S28a_01  phases=1  bus1=28.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S28a_02  phases=1  bus1=28.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S28a_03  phases=1  bus1=28.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S28a_04  phases=1  bus1=28.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S28a_05  phases=1  bus1=28.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S28a_06  phases=1  bus1=28.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S28a_07  phases=1  bus1=28.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S28a_08  phases=1  bus1=28.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S28a_09  phases=1  bus1=28.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S28a_10  phases=1  bus1=28.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S28a  Mode=FOLLOW  kWTargetShape=V2G_S28a  ElementList=(Storage.V2G_S28a_01 Storage.V2G_S28a_02 Storage.V2G_S28a_03 Storage.V2G_S28a_04 Storage.V2G_S28a_05 Storage.V2G_S28a_06 Storage.V2G_S28a_07 Storage.V2G_S28a_08 Storage.V2G_S28a_09 Storage.V2G_S28a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S29a (expects file "V2G_S29a.csv")
+New Loadshape.V2G_S29a csvfile="V2G_S29a.csv"
+
+New Storage.V2G_S29a_01  phases=1  bus1=29.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S29a_02  phases=1  bus1=29.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S29a_03  phases=1  bus1=29.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S29a_04  phases=1  bus1=29.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S29a_05  phases=1  bus1=29.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S29a_06  phases=1  bus1=29.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S29a_07  phases=1  bus1=29.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S29a_08  phases=1  bus1=29.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S29a_09  phases=1  bus1=29.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S29a_10  phases=1  bus1=29.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S29a  Mode=FOLLOW  kWTargetShape=V2G_S29a  ElementList=(Storage.V2G_S29a_01 Storage.V2G_S29a_02 Storage.V2G_S29a_03 Storage.V2G_S29a_04 Storage.V2G_S29a_05 Storage.V2G_S29a_06 Storage.V2G_S29a_07 Storage.V2G_S29a_08 Storage.V2G_S29a_09 Storage.V2G_S29a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S30c (expects file "V2G_S30c.csv")
+New Loadshape.V2G_S30c csvfile="V2G_S30c.csv"
+
+New Storage.V2G_S30c_01  phases=1  bus1=30.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S30c_02  phases=1  bus1=30.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S30c_03  phases=1  bus1=30.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S30c_04  phases=1  bus1=30.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S30c_05  phases=1  bus1=30.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S30c_06  phases=1  bus1=30.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S30c_07  phases=1  bus1=30.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S30c_08  phases=1  bus1=30.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S30c_09  phases=1  bus1=30.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S30c_10  phases=1  bus1=30.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S30c  Mode=FOLLOW  kWTargetShape=V2G_S30c  ElementList=(Storage.V2G_S30c_01 Storage.V2G_S30c_02 Storage.V2G_S30c_03 Storage.V2G_S30c_04 Storage.V2G_S30c_05 Storage.V2G_S30c_06 Storage.V2G_S30c_07 Storage.V2G_S30c_08 Storage.V2G_S30c_09 Storage.V2G_S30c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S31c (expects file "V2G_S31c.csv")
+New Loadshape.V2G_S31c csvfile="V2G_S31c.csv"
+
+New Storage.V2G_S31c_01  phases=1  bus1=31.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S31c_02  phases=1  bus1=31.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S31c_03  phases=1  bus1=31.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S31c_04  phases=1  bus1=31.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S31c_05  phases=1  bus1=31.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S31c_06  phases=1  bus1=31.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S31c_07  phases=1  bus1=31.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S31c_08  phases=1  bus1=31.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S31c_09  phases=1  bus1=31.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S31c_10  phases=1  bus1=31.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S31c  Mode=FOLLOW  kWTargetShape=V2G_S31c  ElementList=(Storage.V2G_S31c_01 Storage.V2G_S31c_02 Storage.V2G_S31c_03 Storage.V2G_S31c_04 Storage.V2G_S31c_05 Storage.V2G_S31c_06 Storage.V2G_S31c_07 Storage.V2G_S31c_08 Storage.V2G_S31c_09 Storage.V2G_S31c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S32c (expects file "V2G_S32c.csv")
+New Loadshape.V2G_S32c csvfile="V2G_S32c.csv"
+
+New Storage.V2G_S32c_01  phases=1  bus1=32.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S32c_02  phases=1  bus1=32.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S32c_03  phases=1  bus1=32.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S32c_04  phases=1  bus1=32.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S32c_05  phases=1  bus1=32.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S32c_06  phases=1  bus1=32.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S32c_07  phases=1  bus1=32.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S32c_08  phases=1  bus1=32.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S32c_09  phases=1  bus1=32.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S32c_10  phases=1  bus1=32.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S32c  Mode=FOLLOW  kWTargetShape=V2G_S32c  ElementList=(Storage.V2G_S32c_01 Storage.V2G_S32c_02 Storage.V2G_S32c_03 Storage.V2G_S32c_04 Storage.V2G_S32c_05 Storage.V2G_S32c_06 Storage.V2G_S32c_07 Storage.V2G_S32c_08 Storage.V2G_S32c_09 Storage.V2G_S32c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S33a (expects file "V2G_S33a.csv")
+New Loadshape.V2G_S33a csvfile="V2G_S33a.csv"
+
+New Storage.V2G_S33a_01  phases=1  bus1=33.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S33a_02  phases=1  bus1=33.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S33a_03  phases=1  bus1=33.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S33a_04  phases=1  bus1=33.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S33a_05  phases=1  bus1=33.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S33a_06  phases=1  bus1=33.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S33a_07  phases=1  bus1=33.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S33a_08  phases=1  bus1=33.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S33a_09  phases=1  bus1=33.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S33a_10  phases=1  bus1=33.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S33a  Mode=FOLLOW  kWTargetShape=V2G_S33a  ElementList=(Storage.V2G_S33a_01 Storage.V2G_S33a_02 Storage.V2G_S33a_03 Storage.V2G_S33a_04 Storage.V2G_S33a_05 Storage.V2G_S33a_06 Storage.V2G_S33a_07 Storage.V2G_S33a_08 Storage.V2G_S33a_09 Storage.V2G_S33a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S34c (expects file "V2G_S34c.csv")
+New Loadshape.V2G_S34c csvfile="V2G_S34c.csv"
+
+New Storage.V2G_S34c_01  phases=1  bus1=34.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S34c_02  phases=1  bus1=34.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S34c_03  phases=1  bus1=34.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S34c_04  phases=1  bus1=34.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S34c_05  phases=1  bus1=34.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S34c_06  phases=1  bus1=34.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S34c_07  phases=1  bus1=34.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S34c_08  phases=1  bus1=34.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S34c_09  phases=1  bus1=34.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S34c_10  phases=1  bus1=34.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S34c  Mode=FOLLOW  kWTargetShape=V2G_S34c  ElementList=(Storage.V2G_S34c_01 Storage.V2G_S34c_02 Storage.V2G_S34c_03 Storage.V2G_S34c_04 Storage.V2G_S34c_05 Storage.V2G_S34c_06 Storage.V2G_S34c_07 Storage.V2G_S34c_08 Storage.V2G_S34c_09 Storage.V2G_S34c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S35a (expects file "V2G_S35a.csv")
+New Loadshape.V2G_S35a csvfile="V2G_S35a.csv"
+
+New Storage.V2G_S35a_01  phases=1  bus1=35.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S35a_02  phases=1  bus1=35.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S35a_03  phases=1  bus1=35.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S35a_04  phases=1  bus1=35.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S35a_05  phases=1  bus1=35.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S35a_06  phases=1  bus1=35.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S35a_07  phases=1  bus1=35.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S35a_08  phases=1  bus1=35.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S35a_09  phases=1  bus1=35.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S35a_10  phases=1  bus1=35.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S35a  Mode=FOLLOW  kWTargetShape=V2G_S35a  ElementList=(Storage.V2G_S35a_01 Storage.V2G_S35a_02 Storage.V2G_S35a_03 Storage.V2G_S35a_04 Storage.V2G_S35a_05 Storage.V2G_S35a_06 Storage.V2G_S35a_07 Storage.V2G_S35a_08 Storage.V2G_S35a_09 Storage.V2G_S35a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S37a (expects file "V2G_S37a.csv")
+New Loadshape.V2G_S37a csvfile="V2G_S37a.csv"
+
+New Storage.V2G_S37a_01  phases=1  bus1=37.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S37a_02  phases=1  bus1=37.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S37a_03  phases=1  bus1=37.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S37a_04  phases=1  bus1=37.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S37a_05  phases=1  bus1=37.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S37a_06  phases=1  bus1=37.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S37a_07  phases=1  bus1=37.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S37a_08  phases=1  bus1=37.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S37a_09  phases=1  bus1=37.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S37a_10  phases=1  bus1=37.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S37a  Mode=FOLLOW  kWTargetShape=V2G_S37a  ElementList=(Storage.V2G_S37a_01 Storage.V2G_S37a_02 Storage.V2G_S37a_03 Storage.V2G_S37a_04 Storage.V2G_S37a_05 Storage.V2G_S37a_06 Storage.V2G_S37a_07 Storage.V2G_S37a_08 Storage.V2G_S37a_09 Storage.V2G_S37a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S38b (expects file "V2G_S38b.csv")
+New Loadshape.V2G_S38b csvfile="V2G_S38b.csv"
+
+New Storage.V2G_S38b_01  phases=1  bus1=38.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S38b_02  phases=1  bus1=38.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S38b_03  phases=1  bus1=38.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S38b_04  phases=1  bus1=38.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S38b_05  phases=1  bus1=38.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S38b_06  phases=1  bus1=38.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S38b_07  phases=1  bus1=38.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S38b_08  phases=1  bus1=38.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S38b_09  phases=1  bus1=38.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S38b_10  phases=1  bus1=38.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S38b  Mode=FOLLOW  kWTargetShape=V2G_S38b  ElementList=(Storage.V2G_S38b_01 Storage.V2G_S38b_02 Storage.V2G_S38b_03 Storage.V2G_S38b_04 Storage.V2G_S38b_05 Storage.V2G_S38b_06 Storage.V2G_S38b_07 Storage.V2G_S38b_08 Storage.V2G_S38b_09 Storage.V2G_S38b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S39b (expects file "V2G_S39b.csv")
+New Loadshape.V2G_S39b csvfile="V2G_S39b.csv"
+
+New Storage.V2G_S39b_01  phases=1  bus1=39.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S39b_02  phases=1  bus1=39.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S39b_03  phases=1  bus1=39.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S39b_04  phases=1  bus1=39.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S39b_05  phases=1  bus1=39.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S39b_06  phases=1  bus1=39.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S39b_07  phases=1  bus1=39.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S39b_08  phases=1  bus1=39.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S39b_09  phases=1  bus1=39.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S39b_10  phases=1  bus1=39.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S39b  Mode=FOLLOW  kWTargetShape=V2G_S39b  ElementList=(Storage.V2G_S39b_01 Storage.V2G_S39b_02 Storage.V2G_S39b_03 Storage.V2G_S39b_04 Storage.V2G_S39b_05 Storage.V2G_S39b_06 Storage.V2G_S39b_07 Storage.V2G_S39b_08 Storage.V2G_S39b_09 Storage.V2G_S39b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S41c (expects file "V2G_S41c.csv")
+New Loadshape.V2G_S41c csvfile="V2G_S41c.csv"
+
+New Storage.V2G_S41c_01  phases=1  bus1=41.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S41c_02  phases=1  bus1=41.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S41c_03  phases=1  bus1=41.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S41c_04  phases=1  bus1=41.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S41c_05  phases=1  bus1=41.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S41c_06  phases=1  bus1=41.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S41c_07  phases=1  bus1=41.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S41c_08  phases=1  bus1=41.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S41c_09  phases=1  bus1=41.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S41c_10  phases=1  bus1=41.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S41c  Mode=FOLLOW  kWTargetShape=V2G_S41c  ElementList=(Storage.V2G_S41c_01 Storage.V2G_S41c_02 Storage.V2G_S41c_03 Storage.V2G_S41c_04 Storage.V2G_S41c_05 Storage.V2G_S41c_06 Storage.V2G_S41c_07 Storage.V2G_S41c_08 Storage.V2G_S41c_09 Storage.V2G_S41c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S42a (expects file "V2G_S42a.csv")
+New Loadshape.V2G_S42a csvfile="V2G_S42a.csv"
+
+New Storage.V2G_S42a_01  phases=1  bus1=42.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S42a_02  phases=1  bus1=42.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S42a_03  phases=1  bus1=42.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S42a_04  phases=1  bus1=42.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S42a_05  phases=1  bus1=42.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S42a_06  phases=1  bus1=42.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S42a_07  phases=1  bus1=42.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S42a_08  phases=1  bus1=42.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S42a_09  phases=1  bus1=42.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S42a_10  phases=1  bus1=42.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S42a  Mode=FOLLOW  kWTargetShape=V2G_S42a  ElementList=(Storage.V2G_S42a_01 Storage.V2G_S42a_02 Storage.V2G_S42a_03 Storage.V2G_S42a_04 Storage.V2G_S42a_05 Storage.V2G_S42a_06 Storage.V2G_S42a_07 Storage.V2G_S42a_08 Storage.V2G_S42a_09 Storage.V2G_S42a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S43b (expects file "V2G_S43b.csv")
+New Loadshape.V2G_S43b csvfile="V2G_S43b.csv"
+
+New Storage.V2G_S43b_01  phases=1  bus1=43.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S43b_02  phases=1  bus1=43.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S43b_03  phases=1  bus1=43.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S43b_04  phases=1  bus1=43.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S43b_05  phases=1  bus1=43.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S43b_06  phases=1  bus1=43.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S43b_07  phases=1  bus1=43.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S43b_08  phases=1  bus1=43.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S43b_09  phases=1  bus1=43.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S43b_10  phases=1  bus1=43.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S43b  Mode=FOLLOW  kWTargetShape=V2G_S43b  ElementList=(Storage.V2G_S43b_01 Storage.V2G_S43b_02 Storage.V2G_S43b_03 Storage.V2G_S43b_04 Storage.V2G_S43b_05 Storage.V2G_S43b_06 Storage.V2G_S43b_07 Storage.V2G_S43b_08 Storage.V2G_S43b_09 Storage.V2G_S43b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S45a (expects file "V2G_S45a.csv")
+New Loadshape.V2G_S45a csvfile="V2G_S45a.csv"
+
+New Storage.V2G_S45a_01  phases=1  bus1=45.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S45a_02  phases=1  bus1=45.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S45a_03  phases=1  bus1=45.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S45a_04  phases=1  bus1=45.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S45a_05  phases=1  bus1=45.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S45a_06  phases=1  bus1=45.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S45a_07  phases=1  bus1=45.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S45a_08  phases=1  bus1=45.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S45a_09  phases=1  bus1=45.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S45a_10  phases=1  bus1=45.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S45a  Mode=FOLLOW  kWTargetShape=V2G_S45a  ElementList=(Storage.V2G_S45a_01 Storage.V2G_S45a_02 Storage.V2G_S45a_03 Storage.V2G_S45a_04 Storage.V2G_S45a_05 Storage.V2G_S45a_06 Storage.V2G_S45a_07 Storage.V2G_S45a_08 Storage.V2G_S45a_09 Storage.V2G_S45a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S46a (expects file "V2G_S46a.csv")
+New Loadshape.V2G_S46a csvfile="V2G_S46a.csv"
+
+New Storage.V2G_S46a_01  phases=1  bus1=46.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S46a_02  phases=1  bus1=46.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S46a_03  phases=1  bus1=46.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S46a_04  phases=1  bus1=46.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S46a_05  phases=1  bus1=46.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S46a_06  phases=1  bus1=46.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S46a_07  phases=1  bus1=46.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S46a_08  phases=1  bus1=46.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S46a_09  phases=1  bus1=46.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S46a_10  phases=1  bus1=46.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S46a  Mode=FOLLOW  kWTargetShape=V2G_S46a  ElementList=(Storage.V2G_S46a_01 Storage.V2G_S46a_02 Storage.V2G_S46a_03 Storage.V2G_S46a_04 Storage.V2G_S46a_05 Storage.V2G_S46a_06 Storage.V2G_S46a_07 Storage.V2G_S46a_08 Storage.V2G_S46a_09 Storage.V2G_S46a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S47 (expects file "V2G_S47.csv")
+New Loadshape.V2G_S47 csvfile="V2G_S47.csv"
+
+New Storage.V2G_S47_01  phases=3  bus1=47  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S47_02  phases=3  bus1=47  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S47_03  phases=3  bus1=47  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S47_04  phases=3  bus1=47  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S47_05  phases=3  bus1=47  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S47_06  phases=3  bus1=47  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S47_07  phases=3  bus1=47  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S47_08  phases=3  bus1=47  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S47_09  phases=3  bus1=47  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S47_10  phases=3  bus1=47  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S47  Mode=FOLLOW  kWTargetShape=V2G_S47  ElementList=(Storage.V2G_S47_01 Storage.V2G_S47_02 Storage.V2G_S47_03 Storage.V2G_S47_04 Storage.V2G_S47_05 Storage.V2G_S47_06 Storage.V2G_S47_07 Storage.V2G_S47_08 Storage.V2G_S47_09 Storage.V2G_S47_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S48 (expects file "V2G_S48.csv")
+New Loadshape.V2G_S48 csvfile="V2G_S48.csv"
+
+New Storage.V2G_S48_01  phases=3  bus1=48  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S48_02  phases=3  bus1=48  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S48_03  phases=3  bus1=48  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S48_04  phases=3  bus1=48  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S48_05  phases=3  bus1=48  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S48_06  phases=3  bus1=48  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S48_07  phases=3  bus1=48  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S48_08  phases=3  bus1=48  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S48_09  phases=3  bus1=48  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S48_10  phases=3  bus1=48  conn=Wye  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S48  Mode=FOLLOW  kWTargetShape=V2G_S48  ElementList=(Storage.V2G_S48_01 Storage.V2G_S48_02 Storage.V2G_S48_03 Storage.V2G_S48_04 Storage.V2G_S48_05 Storage.V2G_S48_06 Storage.V2G_S48_07 Storage.V2G_S48_08 Storage.V2G_S48_09 Storage.V2G_S48_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S49a (expects file "V2G_S49a.csv")
+New Loadshape.V2G_S49a csvfile="V2G_S49a.csv"
+
+New Storage.V2G_S49a_01  phases=1  bus1=49.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49a_02  phases=1  bus1=49.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49a_03  phases=1  bus1=49.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49a_04  phases=1  bus1=49.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49a_05  phases=1  bus1=49.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49a_06  phases=1  bus1=49.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49a_07  phases=1  bus1=49.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49a_08  phases=1  bus1=49.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49a_09  phases=1  bus1=49.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49a_10  phases=1  bus1=49.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S49a  Mode=FOLLOW  kWTargetShape=V2G_S49a  ElementList=(Storage.V2G_S49a_01 Storage.V2G_S49a_02 Storage.V2G_S49a_03 Storage.V2G_S49a_04 Storage.V2G_S49a_05 Storage.V2G_S49a_06 Storage.V2G_S49a_07 Storage.V2G_S49a_08 Storage.V2G_S49a_09 Storage.V2G_S49a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S49b (expects file "V2G_S49b.csv")
+New Loadshape.V2G_S49b csvfile="V2G_S49b.csv"
+
+New Storage.V2G_S49b_01  phases=1  bus1=49.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49b_02  phases=1  bus1=49.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49b_03  phases=1  bus1=49.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49b_04  phases=1  bus1=49.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49b_05  phases=1  bus1=49.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49b_06  phases=1  bus1=49.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49b_07  phases=1  bus1=49.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49b_08  phases=1  bus1=49.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49b_09  phases=1  bus1=49.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49b_10  phases=1  bus1=49.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S49b  Mode=FOLLOW  kWTargetShape=V2G_S49b  ElementList=(Storage.V2G_S49b_01 Storage.V2G_S49b_02 Storage.V2G_S49b_03 Storage.V2G_S49b_04 Storage.V2G_S49b_05 Storage.V2G_S49b_06 Storage.V2G_S49b_07 Storage.V2G_S49b_08 Storage.V2G_S49b_09 Storage.V2G_S49b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S49c (expects file "V2G_S49c.csv")
+New Loadshape.V2G_S49c csvfile="V2G_S49c.csv"
+
+New Storage.V2G_S49c_01  phases=1  bus1=49.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49c_02  phases=1  bus1=49.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49c_03  phases=1  bus1=49.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49c_04  phases=1  bus1=49.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49c_05  phases=1  bus1=49.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49c_06  phases=1  bus1=49.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49c_07  phases=1  bus1=49.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49c_08  phases=1  bus1=49.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49c_09  phases=1  bus1=49.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S49c_10  phases=1  bus1=49.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S49c  Mode=FOLLOW  kWTargetShape=V2G_S49c  ElementList=(Storage.V2G_S49c_01 Storage.V2G_S49c_02 Storage.V2G_S49c_03 Storage.V2G_S49c_04 Storage.V2G_S49c_05 Storage.V2G_S49c_06 Storage.V2G_S49c_07 Storage.V2G_S49c_08 Storage.V2G_S49c_09 Storage.V2G_S49c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S50c (expects file "V2G_S50c.csv")
+New Loadshape.V2G_S50c csvfile="V2G_S50c.csv"
+
+New Storage.V2G_S50c_01  phases=1  bus1=50.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S50c_02  phases=1  bus1=50.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S50c_03  phases=1  bus1=50.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S50c_04  phases=1  bus1=50.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S50c_05  phases=1  bus1=50.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S50c_06  phases=1  bus1=50.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S50c_07  phases=1  bus1=50.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S50c_08  phases=1  bus1=50.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S50c_09  phases=1  bus1=50.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S50c_10  phases=1  bus1=50.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S50c  Mode=FOLLOW  kWTargetShape=V2G_S50c  ElementList=(Storage.V2G_S50c_01 Storage.V2G_S50c_02 Storage.V2G_S50c_03 Storage.V2G_S50c_04 Storage.V2G_S50c_05 Storage.V2G_S50c_06 Storage.V2G_S50c_07 Storage.V2G_S50c_08 Storage.V2G_S50c_09 Storage.V2G_S50c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S51a (expects file "V2G_S51a.csv")
+New Loadshape.V2G_S51a csvfile="V2G_S51a.csv"
+
+New Storage.V2G_S51a_01  phases=1  bus1=51.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S51a_02  phases=1  bus1=51.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S51a_03  phases=1  bus1=51.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S51a_04  phases=1  bus1=51.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S51a_05  phases=1  bus1=51.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S51a_06  phases=1  bus1=51.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S51a_07  phases=1  bus1=51.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S51a_08  phases=1  bus1=51.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S51a_09  phases=1  bus1=51.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S51a_10  phases=1  bus1=51.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S51a  Mode=FOLLOW  kWTargetShape=V2G_S51a  ElementList=(Storage.V2G_S51a_01 Storage.V2G_S51a_02 Storage.V2G_S51a_03 Storage.V2G_S51a_04 Storage.V2G_S51a_05 Storage.V2G_S51a_06 Storage.V2G_S51a_07 Storage.V2G_S51a_08 Storage.V2G_S51a_09 Storage.V2G_S51a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S52a (expects file "V2G_S52a.csv")
+New Loadshape.V2G_S52a csvfile="V2G_S52a.csv"
+
+New Storage.V2G_S52a_01  phases=1  bus1=52.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S52a_02  phases=1  bus1=52.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S52a_03  phases=1  bus1=52.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S52a_04  phases=1  bus1=52.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S52a_05  phases=1  bus1=52.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S52a_06  phases=1  bus1=52.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S52a_07  phases=1  bus1=52.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S52a_08  phases=1  bus1=52.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S52a_09  phases=1  bus1=52.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S52a_10  phases=1  bus1=52.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S52a  Mode=FOLLOW  kWTargetShape=V2G_S52a  ElementList=(Storage.V2G_S52a_01 Storage.V2G_S52a_02 Storage.V2G_S52a_03 Storage.V2G_S52a_04 Storage.V2G_S52a_05 Storage.V2G_S52a_06 Storage.V2G_S52a_07 Storage.V2G_S52a_08 Storage.V2G_S52a_09 Storage.V2G_S52a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S53a (expects file "V2G_S53a.csv")
+New Loadshape.V2G_S53a csvfile="V2G_S53a.csv"
+
+New Storage.V2G_S53a_01  phases=1  bus1=53.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S53a_02  phases=1  bus1=53.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S53a_03  phases=1  bus1=53.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S53a_04  phases=1  bus1=53.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S53a_05  phases=1  bus1=53.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S53a_06  phases=1  bus1=53.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S53a_07  phases=1  bus1=53.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S53a_08  phases=1  bus1=53.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S53a_09  phases=1  bus1=53.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S53a_10  phases=1  bus1=53.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S53a  Mode=FOLLOW  kWTargetShape=V2G_S53a  ElementList=(Storage.V2G_S53a_01 Storage.V2G_S53a_02 Storage.V2G_S53a_03 Storage.V2G_S53a_04 Storage.V2G_S53a_05 Storage.V2G_S53a_06 Storage.V2G_S53a_07 Storage.V2G_S53a_08 Storage.V2G_S53a_09 Storage.V2G_S53a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S55a (expects file "V2G_S55a.csv")
+New Loadshape.V2G_S55a csvfile="V2G_S55a.csv"
+
+New Storage.V2G_S55a_01  phases=1  bus1=55.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S55a_02  phases=1  bus1=55.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S55a_03  phases=1  bus1=55.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S55a_04  phases=1  bus1=55.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S55a_05  phases=1  bus1=55.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S55a_06  phases=1  bus1=55.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S55a_07  phases=1  bus1=55.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S55a_08  phases=1  bus1=55.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S55a_09  phases=1  bus1=55.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S55a_10  phases=1  bus1=55.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S55a  Mode=FOLLOW  kWTargetShape=V2G_S55a  ElementList=(Storage.V2G_S55a_01 Storage.V2G_S55a_02 Storage.V2G_S55a_03 Storage.V2G_S55a_04 Storage.V2G_S55a_05 Storage.V2G_S55a_06 Storage.V2G_S55a_07 Storage.V2G_S55a_08 Storage.V2G_S55a_09 Storage.V2G_S55a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S56b (expects file "V2G_S56b.csv")
+New Loadshape.V2G_S56b csvfile="V2G_S56b.csv"
+
+New Storage.V2G_S56b_01  phases=1  bus1=56.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S56b_02  phases=1  bus1=56.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S56b_03  phases=1  bus1=56.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S56b_04  phases=1  bus1=56.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S56b_05  phases=1  bus1=56.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S56b_06  phases=1  bus1=56.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S56b_07  phases=1  bus1=56.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S56b_08  phases=1  bus1=56.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S56b_09  phases=1  bus1=56.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S56b_10  phases=1  bus1=56.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S56b  Mode=FOLLOW  kWTargetShape=V2G_S56b  ElementList=(Storage.V2G_S56b_01 Storage.V2G_S56b_02 Storage.V2G_S56b_03 Storage.V2G_S56b_04 Storage.V2G_S56b_05 Storage.V2G_S56b_06 Storage.V2G_S56b_07 Storage.V2G_S56b_08 Storage.V2G_S56b_09 Storage.V2G_S56b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S58b (expects file "V2G_S58b.csv")
+New Loadshape.V2G_S58b csvfile="V2G_S58b.csv"
+
+New Storage.V2G_S58b_01  phases=1  bus1=58.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S58b_02  phases=1  bus1=58.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S58b_03  phases=1  bus1=58.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S58b_04  phases=1  bus1=58.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S58b_05  phases=1  bus1=58.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S58b_06  phases=1  bus1=58.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S58b_07  phases=1  bus1=58.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S58b_08  phases=1  bus1=58.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S58b_09  phases=1  bus1=58.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S58b_10  phases=1  bus1=58.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S58b  Mode=FOLLOW  kWTargetShape=V2G_S58b  ElementList=(Storage.V2G_S58b_01 Storage.V2G_S58b_02 Storage.V2G_S58b_03 Storage.V2G_S58b_04 Storage.V2G_S58b_05 Storage.V2G_S58b_06 Storage.V2G_S58b_07 Storage.V2G_S58b_08 Storage.V2G_S58b_09 Storage.V2G_S58b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S59b (expects file "V2G_S59b.csv")
+New Loadshape.V2G_S59b csvfile="V2G_S59b.csv"
+
+New Storage.V2G_S59b_01  phases=1  bus1=59.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S59b_02  phases=1  bus1=59.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S59b_03  phases=1  bus1=59.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S59b_04  phases=1  bus1=59.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S59b_05  phases=1  bus1=59.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S59b_06  phases=1  bus1=59.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S59b_07  phases=1  bus1=59.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S59b_08  phases=1  bus1=59.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S59b_09  phases=1  bus1=59.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S59b_10  phases=1  bus1=59.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S59b  Mode=FOLLOW  kWTargetShape=V2G_S59b  ElementList=(Storage.V2G_S59b_01 Storage.V2G_S59b_02 Storage.V2G_S59b_03 Storage.V2G_S59b_04 Storage.V2G_S59b_05 Storage.V2G_S59b_06 Storage.V2G_S59b_07 Storage.V2G_S59b_08 Storage.V2G_S59b_09 Storage.V2G_S59b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S60a (expects file "V2G_S60a.csv")
+New Loadshape.V2G_S60a csvfile="V2G_S60a.csv"
+
+New Storage.V2G_S60a_01  phases=1  bus1=60.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S60a_02  phases=1  bus1=60.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S60a_03  phases=1  bus1=60.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S60a_04  phases=1  bus1=60.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S60a_05  phases=1  bus1=60.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S60a_06  phases=1  bus1=60.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S60a_07  phases=1  bus1=60.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S60a_08  phases=1  bus1=60.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S60a_09  phases=1  bus1=60.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S60a_10  phases=1  bus1=60.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S60a  Mode=FOLLOW  kWTargetShape=V2G_S60a  ElementList=(Storage.V2G_S60a_01 Storage.V2G_S60a_02 Storage.V2G_S60a_03 Storage.V2G_S60a_04 Storage.V2G_S60a_05 Storage.V2G_S60a_06 Storage.V2G_S60a_07 Storage.V2G_S60a_08 Storage.V2G_S60a_09 Storage.V2G_S60a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S62c (expects file "V2G_S62c.csv")
+New Loadshape.V2G_S62c csvfile="V2G_S62c.csv"
+
+New Storage.V2G_S62c_01  phases=1  bus1=62.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S62c_02  phases=1  bus1=62.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S62c_03  phases=1  bus1=62.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S62c_04  phases=1  bus1=62.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S62c_05  phases=1  bus1=62.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S62c_06  phases=1  bus1=62.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S62c_07  phases=1  bus1=62.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S62c_08  phases=1  bus1=62.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S62c_09  phases=1  bus1=62.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S62c_10  phases=1  bus1=62.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S62c  Mode=FOLLOW  kWTargetShape=V2G_S62c  ElementList=(Storage.V2G_S62c_01 Storage.V2G_S62c_02 Storage.V2G_S62c_03 Storage.V2G_S62c_04 Storage.V2G_S62c_05 Storage.V2G_S62c_06 Storage.V2G_S62c_07 Storage.V2G_S62c_08 Storage.V2G_S62c_09 Storage.V2G_S62c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S63a (expects file "V2G_S63a.csv")
+New Loadshape.V2G_S63a csvfile="V2G_S63a.csv"
+
+New Storage.V2G_S63a_01  phases=1  bus1=63.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S63a_02  phases=1  bus1=63.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S63a_03  phases=1  bus1=63.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S63a_04  phases=1  bus1=63.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S63a_05  phases=1  bus1=63.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S63a_06  phases=1  bus1=63.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S63a_07  phases=1  bus1=63.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S63a_08  phases=1  bus1=63.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S63a_09  phases=1  bus1=63.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S63a_10  phases=1  bus1=63.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S63a  Mode=FOLLOW  kWTargetShape=V2G_S63a  ElementList=(Storage.V2G_S63a_01 Storage.V2G_S63a_02 Storage.V2G_S63a_03 Storage.V2G_S63a_04 Storage.V2G_S63a_05 Storage.V2G_S63a_06 Storage.V2G_S63a_07 Storage.V2G_S63a_08 Storage.V2G_S63a_09 Storage.V2G_S63a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S64b (expects file "V2G_S64b.csv")
+New Loadshape.V2G_S64b csvfile="V2G_S64b.csv"
+
+New Storage.V2G_S64b_01  phases=1  bus1=64.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S64b_02  phases=1  bus1=64.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S64b_03  phases=1  bus1=64.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S64b_04  phases=1  bus1=64.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S64b_05  phases=1  bus1=64.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S64b_06  phases=1  bus1=64.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S64b_07  phases=1  bus1=64.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S64b_08  phases=1  bus1=64.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S64b_09  phases=1  bus1=64.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S64b_10  phases=1  bus1=64.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S64b  Mode=FOLLOW  kWTargetShape=V2G_S64b  ElementList=(Storage.V2G_S64b_01 Storage.V2G_S64b_02 Storage.V2G_S64b_03 Storage.V2G_S64b_04 Storage.V2G_S64b_05 Storage.V2G_S64b_06 Storage.V2G_S64b_07 Storage.V2G_S64b_08 Storage.V2G_S64b_09 Storage.V2G_S64b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S65a (expects file "V2G_S65a.csv")
+New Loadshape.V2G_S65a csvfile="V2G_S65a.csv"
+
+New Storage.V2G_S65a_01  phases=1  bus1=65.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65a_02  phases=1  bus1=65.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65a_03  phases=1  bus1=65.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65a_04  phases=1  bus1=65.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65a_05  phases=1  bus1=65.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65a_06  phases=1  bus1=65.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65a_07  phases=1  bus1=65.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65a_08  phases=1  bus1=65.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65a_09  phases=1  bus1=65.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65a_10  phases=1  bus1=65.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S65a  Mode=FOLLOW  kWTargetShape=V2G_S65a  ElementList=(Storage.V2G_S65a_01 Storage.V2G_S65a_02 Storage.V2G_S65a_03 Storage.V2G_S65a_04 Storage.V2G_S65a_05 Storage.V2G_S65a_06 Storage.V2G_S65a_07 Storage.V2G_S65a_08 Storage.V2G_S65a_09 Storage.V2G_S65a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S65b (expects file "V2G_S65b.csv")
+New Loadshape.V2G_S65b csvfile="V2G_S65b.csv"
+
+New Storage.V2G_S65b_01  phases=1  bus1=65.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65b_02  phases=1  bus1=65.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65b_03  phases=1  bus1=65.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65b_04  phases=1  bus1=65.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65b_05  phases=1  bus1=65.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65b_06  phases=1  bus1=65.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65b_07  phases=1  bus1=65.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65b_08  phases=1  bus1=65.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65b_09  phases=1  bus1=65.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65b_10  phases=1  bus1=65.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S65b  Mode=FOLLOW  kWTargetShape=V2G_S65b  ElementList=(Storage.V2G_S65b_01 Storage.V2G_S65b_02 Storage.V2G_S65b_03 Storage.V2G_S65b_04 Storage.V2G_S65b_05 Storage.V2G_S65b_06 Storage.V2G_S65b_07 Storage.V2G_S65b_08 Storage.V2G_S65b_09 Storage.V2G_S65b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S65c (expects file "V2G_S65c.csv")
+New Loadshape.V2G_S65c csvfile="V2G_S65c.csv"
+
+New Storage.V2G_S65c_01  phases=1  bus1=65.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65c_02  phases=1  bus1=65.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65c_03  phases=1  bus1=65.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65c_04  phases=1  bus1=65.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65c_05  phases=1  bus1=65.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65c_06  phases=1  bus1=65.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65c_07  phases=1  bus1=65.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65c_08  phases=1  bus1=65.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65c_09  phases=1  bus1=65.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S65c_10  phases=1  bus1=65.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S65c  Mode=FOLLOW  kWTargetShape=V2G_S65c  ElementList=(Storage.V2G_S65c_01 Storage.V2G_S65c_02 Storage.V2G_S65c_03 Storage.V2G_S65c_04 Storage.V2G_S65c_05 Storage.V2G_S65c_06 Storage.V2G_S65c_07 Storage.V2G_S65c_08 Storage.V2G_S65c_09 Storage.V2G_S65c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S66c (expects file "V2G_S66c.csv")
+New Loadshape.V2G_S66c csvfile="V2G_S66c.csv"
+
+New Storage.V2G_S66c_01  phases=1  bus1=66.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S66c_02  phases=1  bus1=66.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S66c_03  phases=1  bus1=66.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S66c_04  phases=1  bus1=66.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S66c_05  phases=1  bus1=66.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S66c_06  phases=1  bus1=66.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S66c_07  phases=1  bus1=66.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S66c_08  phases=1  bus1=66.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S66c_09  phases=1  bus1=66.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S66c_10  phases=1  bus1=66.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S66c  Mode=FOLLOW  kWTargetShape=V2G_S66c  ElementList=(Storage.V2G_S66c_01 Storage.V2G_S66c_02 Storage.V2G_S66c_03 Storage.V2G_S66c_04 Storage.V2G_S66c_05 Storage.V2G_S66c_06 Storage.V2G_S66c_07 Storage.V2G_S66c_08 Storage.V2G_S66c_09 Storage.V2G_S66c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S68a (expects file "V2G_S68a.csv")
+New Loadshape.V2G_S68a csvfile="V2G_S68a.csv"
+
+New Storage.V2G_S68a_01  phases=1  bus1=68.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S68a_02  phases=1  bus1=68.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S68a_03  phases=1  bus1=68.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S68a_04  phases=1  bus1=68.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S68a_05  phases=1  bus1=68.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S68a_06  phases=1  bus1=68.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S68a_07  phases=1  bus1=68.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S68a_08  phases=1  bus1=68.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S68a_09  phases=1  bus1=68.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S68a_10  phases=1  bus1=68.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S68a  Mode=FOLLOW  kWTargetShape=V2G_S68a  ElementList=(Storage.V2G_S68a_01 Storage.V2G_S68a_02 Storage.V2G_S68a_03 Storage.V2G_S68a_04 Storage.V2G_S68a_05 Storage.V2G_S68a_06 Storage.V2G_S68a_07 Storage.V2G_S68a_08 Storage.V2G_S68a_09 Storage.V2G_S68a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S69a (expects file "V2G_S69a.csv")
+New Loadshape.V2G_S69a csvfile="V2G_S69a.csv"
+
+New Storage.V2G_S69a_01  phases=1  bus1=69.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S69a_02  phases=1  bus1=69.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S69a_03  phases=1  bus1=69.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S69a_04  phases=1  bus1=69.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S69a_05  phases=1  bus1=69.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S69a_06  phases=1  bus1=69.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S69a_07  phases=1  bus1=69.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S69a_08  phases=1  bus1=69.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S69a_09  phases=1  bus1=69.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S69a_10  phases=1  bus1=69.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S69a  Mode=FOLLOW  kWTargetShape=V2G_S69a  ElementList=(Storage.V2G_S69a_01 Storage.V2G_S69a_02 Storage.V2G_S69a_03 Storage.V2G_S69a_04 Storage.V2G_S69a_05 Storage.V2G_S69a_06 Storage.V2G_S69a_07 Storage.V2G_S69a_08 Storage.V2G_S69a_09 Storage.V2G_S69a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S70a (expects file "V2G_S70a.csv")
+New Loadshape.V2G_S70a csvfile="V2G_S70a.csv"
+
+New Storage.V2G_S70a_01  phases=1  bus1=70.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S70a_02  phases=1  bus1=70.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S70a_03  phases=1  bus1=70.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S70a_04  phases=1  bus1=70.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S70a_05  phases=1  bus1=70.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S70a_06  phases=1  bus1=70.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S70a_07  phases=1  bus1=70.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S70a_08  phases=1  bus1=70.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S70a_09  phases=1  bus1=70.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S70a_10  phases=1  bus1=70.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S70a  Mode=FOLLOW  kWTargetShape=V2G_S70a  ElementList=(Storage.V2G_S70a_01 Storage.V2G_S70a_02 Storage.V2G_S70a_03 Storage.V2G_S70a_04 Storage.V2G_S70a_05 Storage.V2G_S70a_06 Storage.V2G_S70a_07 Storage.V2G_S70a_08 Storage.V2G_S70a_09 Storage.V2G_S70a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S71a (expects file "V2G_S71a.csv")
+New Loadshape.V2G_S71a csvfile="V2G_S71a.csv"
+
+New Storage.V2G_S71a_01  phases=1  bus1=71.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S71a_02  phases=1  bus1=71.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S71a_03  phases=1  bus1=71.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S71a_04  phases=1  bus1=71.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S71a_05  phases=1  bus1=71.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S71a_06  phases=1  bus1=71.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S71a_07  phases=1  bus1=71.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S71a_08  phases=1  bus1=71.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S71a_09  phases=1  bus1=71.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S71a_10  phases=1  bus1=71.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S71a  Mode=FOLLOW  kWTargetShape=V2G_S71a  ElementList=(Storage.V2G_S71a_01 Storage.V2G_S71a_02 Storage.V2G_S71a_03 Storage.V2G_S71a_04 Storage.V2G_S71a_05 Storage.V2G_S71a_06 Storage.V2G_S71a_07 Storage.V2G_S71a_08 Storage.V2G_S71a_09 Storage.V2G_S71a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S73c (expects file "V2G_S73c.csv")
+New Loadshape.V2G_S73c csvfile="V2G_S73c.csv"
+
+New Storage.V2G_S73c_01  phases=1  bus1=73.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S73c_02  phases=1  bus1=73.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S73c_03  phases=1  bus1=73.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S73c_04  phases=1  bus1=73.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S73c_05  phases=1  bus1=73.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S73c_06  phases=1  bus1=73.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S73c_07  phases=1  bus1=73.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S73c_08  phases=1  bus1=73.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S73c_09  phases=1  bus1=73.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S73c_10  phases=1  bus1=73.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S73c  Mode=FOLLOW  kWTargetShape=V2G_S73c  ElementList=(Storage.V2G_S73c_01 Storage.V2G_S73c_02 Storage.V2G_S73c_03 Storage.V2G_S73c_04 Storage.V2G_S73c_05 Storage.V2G_S73c_06 Storage.V2G_S73c_07 Storage.V2G_S73c_08 Storage.V2G_S73c_09 Storage.V2G_S73c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S74c (expects file "V2G_S74c.csv")
+New Loadshape.V2G_S74c csvfile="V2G_S74c.csv"
+
+New Storage.V2G_S74c_01  phases=1  bus1=74.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S74c_02  phases=1  bus1=74.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S74c_03  phases=1  bus1=74.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S74c_04  phases=1  bus1=74.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S74c_05  phases=1  bus1=74.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S74c_06  phases=1  bus1=74.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S74c_07  phases=1  bus1=74.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S74c_08  phases=1  bus1=74.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S74c_09  phases=1  bus1=74.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S74c_10  phases=1  bus1=74.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S74c  Mode=FOLLOW  kWTargetShape=V2G_S74c  ElementList=(Storage.V2G_S74c_01 Storage.V2G_S74c_02 Storage.V2G_S74c_03 Storage.V2G_S74c_04 Storage.V2G_S74c_05 Storage.V2G_S74c_06 Storage.V2G_S74c_07 Storage.V2G_S74c_08 Storage.V2G_S74c_09 Storage.V2G_S74c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S75c (expects file "V2G_S75c.csv")
+New Loadshape.V2G_S75c csvfile="V2G_S75c.csv"
+
+New Storage.V2G_S75c_01  phases=1  bus1=75.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S75c_02  phases=1  bus1=75.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S75c_03  phases=1  bus1=75.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S75c_04  phases=1  bus1=75.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S75c_05  phases=1  bus1=75.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S75c_06  phases=1  bus1=75.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S75c_07  phases=1  bus1=75.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S75c_08  phases=1  bus1=75.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S75c_09  phases=1  bus1=75.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S75c_10  phases=1  bus1=75.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S75c  Mode=FOLLOW  kWTargetShape=V2G_S75c  ElementList=(Storage.V2G_S75c_01 Storage.V2G_S75c_02 Storage.V2G_S75c_03 Storage.V2G_S75c_04 Storage.V2G_S75c_05 Storage.V2G_S75c_06 Storage.V2G_S75c_07 Storage.V2G_S75c_08 Storage.V2G_S75c_09 Storage.V2G_S75c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S76a (expects file "V2G_S76a.csv")
+New Loadshape.V2G_S76a csvfile="V2G_S76a.csv"
+
+New Storage.V2G_S76a_01  phases=1  bus1=76.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76a_02  phases=1  bus1=76.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76a_03  phases=1  bus1=76.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76a_04  phases=1  bus1=76.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76a_05  phases=1  bus1=76.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76a_06  phases=1  bus1=76.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76a_07  phases=1  bus1=76.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76a_08  phases=1  bus1=76.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76a_09  phases=1  bus1=76.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76a_10  phases=1  bus1=76.1.2  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S76a  Mode=FOLLOW  kWTargetShape=V2G_S76a  ElementList=(Storage.V2G_S76a_01 Storage.V2G_S76a_02 Storage.V2G_S76a_03 Storage.V2G_S76a_04 Storage.V2G_S76a_05 Storage.V2G_S76a_06 Storage.V2G_S76a_07 Storage.V2G_S76a_08 Storage.V2G_S76a_09 Storage.V2G_S76a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S76b (expects file "V2G_S76b.csv")
+New Loadshape.V2G_S76b csvfile="V2G_S76b.csv"
+
+New Storage.V2G_S76b_01  phases=1  bus1=76.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76b_02  phases=1  bus1=76.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76b_03  phases=1  bus1=76.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76b_04  phases=1  bus1=76.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76b_05  phases=1  bus1=76.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76b_06  phases=1  bus1=76.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76b_07  phases=1  bus1=76.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76b_08  phases=1  bus1=76.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76b_09  phases=1  bus1=76.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76b_10  phases=1  bus1=76.2.3  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S76b  Mode=FOLLOW  kWTargetShape=V2G_S76b  ElementList=(Storage.V2G_S76b_01 Storage.V2G_S76b_02 Storage.V2G_S76b_03 Storage.V2G_S76b_04 Storage.V2G_S76b_05 Storage.V2G_S76b_06 Storage.V2G_S76b_07 Storage.V2G_S76b_08 Storage.V2G_S76b_09 Storage.V2G_S76b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S76c (expects file "V2G_S76c.csv")
+New Loadshape.V2G_S76c csvfile="V2G_S76c.csv"
+
+New Storage.V2G_S76c_01  phases=1  bus1=76.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76c_02  phases=1  bus1=76.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76c_03  phases=1  bus1=76.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76c_04  phases=1  bus1=76.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76c_05  phases=1  bus1=76.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76c_06  phases=1  bus1=76.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76c_07  phases=1  bus1=76.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76c_08  phases=1  bus1=76.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76c_09  phases=1  bus1=76.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S76c_10  phases=1  bus1=76.3.1  conn=Delta  kV=4.160  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S76c  Mode=FOLLOW  kWTargetShape=V2G_S76c  ElementList=(Storage.V2G_S76c_01 Storage.V2G_S76c_02 Storage.V2G_S76c_03 Storage.V2G_S76c_04 Storage.V2G_S76c_05 Storage.V2G_S76c_06 Storage.V2G_S76c_07 Storage.V2G_S76c_08 Storage.V2G_S76c_09 Storage.V2G_S76c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S77b (expects file "V2G_S77b.csv")
+New Loadshape.V2G_S77b csvfile="V2G_S77b.csv"
+
+New Storage.V2G_S77b_01  phases=1  bus1=77.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S77b_02  phases=1  bus1=77.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S77b_03  phases=1  bus1=77.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S77b_04  phases=1  bus1=77.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S77b_05  phases=1  bus1=77.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S77b_06  phases=1  bus1=77.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S77b_07  phases=1  bus1=77.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S77b_08  phases=1  bus1=77.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S77b_09  phases=1  bus1=77.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S77b_10  phases=1  bus1=77.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S77b  Mode=FOLLOW  kWTargetShape=V2G_S77b  ElementList=(Storage.V2G_S77b_01 Storage.V2G_S77b_02 Storage.V2G_S77b_03 Storage.V2G_S77b_04 Storage.V2G_S77b_05 Storage.V2G_S77b_06 Storage.V2G_S77b_07 Storage.V2G_S77b_08 Storage.V2G_S77b_09 Storage.V2G_S77b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S79a (expects file "V2G_S79a.csv")
+New Loadshape.V2G_S79a csvfile="V2G_S79a.csv"
+
+New Storage.V2G_S79a_01  phases=1  bus1=79.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S79a_02  phases=1  bus1=79.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S79a_03  phases=1  bus1=79.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S79a_04  phases=1  bus1=79.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S79a_05  phases=1  bus1=79.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S79a_06  phases=1  bus1=79.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S79a_07  phases=1  bus1=79.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S79a_08  phases=1  bus1=79.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S79a_09  phases=1  bus1=79.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S79a_10  phases=1  bus1=79.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S79a  Mode=FOLLOW  kWTargetShape=V2G_S79a  ElementList=(Storage.V2G_S79a_01 Storage.V2G_S79a_02 Storage.V2G_S79a_03 Storage.V2G_S79a_04 Storage.V2G_S79a_05 Storage.V2G_S79a_06 Storage.V2G_S79a_07 Storage.V2G_S79a_08 Storage.V2G_S79a_09 Storage.V2G_S79a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S80b (expects file "V2G_S80b.csv")
+New Loadshape.V2G_S80b csvfile="V2G_S80b.csv"
+
+New Storage.V2G_S80b_01  phases=1  bus1=80.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S80b_02  phases=1  bus1=80.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S80b_03  phases=1  bus1=80.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S80b_04  phases=1  bus1=80.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S80b_05  phases=1  bus1=80.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S80b_06  phases=1  bus1=80.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S80b_07  phases=1  bus1=80.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S80b_08  phases=1  bus1=80.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S80b_09  phases=1  bus1=80.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S80b_10  phases=1  bus1=80.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S80b  Mode=FOLLOW  kWTargetShape=V2G_S80b  ElementList=(Storage.V2G_S80b_01 Storage.V2G_S80b_02 Storage.V2G_S80b_03 Storage.V2G_S80b_04 Storage.V2G_S80b_05 Storage.V2G_S80b_06 Storage.V2G_S80b_07 Storage.V2G_S80b_08 Storage.V2G_S80b_09 Storage.V2G_S80b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S82a (expects file "V2G_S82a.csv")
+New Loadshape.V2G_S82a csvfile="V2G_S82a.csv"
+
+New Storage.V2G_S82a_01  phases=1  bus1=82.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S82a_02  phases=1  bus1=82.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S82a_03  phases=1  bus1=82.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S82a_04  phases=1  bus1=82.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S82a_05  phases=1  bus1=82.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S82a_06  phases=1  bus1=82.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S82a_07  phases=1  bus1=82.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S82a_08  phases=1  bus1=82.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S82a_09  phases=1  bus1=82.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S82a_10  phases=1  bus1=82.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S82a  Mode=FOLLOW  kWTargetShape=V2G_S82a  ElementList=(Storage.V2G_S82a_01 Storage.V2G_S82a_02 Storage.V2G_S82a_03 Storage.V2G_S82a_04 Storage.V2G_S82a_05 Storage.V2G_S82a_06 Storage.V2G_S82a_07 Storage.V2G_S82a_08 Storage.V2G_S82a_09 Storage.V2G_S82a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S83c (expects file "V2G_S83c.csv")
+New Loadshape.V2G_S83c csvfile="V2G_S83c.csv"
+
+New Storage.V2G_S83c_01  phases=1  bus1=83.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S83c_02  phases=1  bus1=83.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S83c_03  phases=1  bus1=83.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S83c_04  phases=1  bus1=83.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S83c_05  phases=1  bus1=83.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S83c_06  phases=1  bus1=83.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S83c_07  phases=1  bus1=83.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S83c_08  phases=1  bus1=83.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S83c_09  phases=1  bus1=83.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S83c_10  phases=1  bus1=83.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S83c  Mode=FOLLOW  kWTargetShape=V2G_S83c  ElementList=(Storage.V2G_S83c_01 Storage.V2G_S83c_02 Storage.V2G_S83c_03 Storage.V2G_S83c_04 Storage.V2G_S83c_05 Storage.V2G_S83c_06 Storage.V2G_S83c_07 Storage.V2G_S83c_08 Storage.V2G_S83c_09 Storage.V2G_S83c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S84c (expects file "V2G_S84c.csv")
+New Loadshape.V2G_S84c csvfile="V2G_S84c.csv"
+
+New Storage.V2G_S84c_01  phases=1  bus1=84.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S84c_02  phases=1  bus1=84.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S84c_03  phases=1  bus1=84.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S84c_04  phases=1  bus1=84.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S84c_05  phases=1  bus1=84.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S84c_06  phases=1  bus1=84.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S84c_07  phases=1  bus1=84.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S84c_08  phases=1  bus1=84.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S84c_09  phases=1  bus1=84.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S84c_10  phases=1  bus1=84.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S84c  Mode=FOLLOW  kWTargetShape=V2G_S84c  ElementList=(Storage.V2G_S84c_01 Storage.V2G_S84c_02 Storage.V2G_S84c_03 Storage.V2G_S84c_04 Storage.V2G_S84c_05 Storage.V2G_S84c_06 Storage.V2G_S84c_07 Storage.V2G_S84c_08 Storage.V2G_S84c_09 Storage.V2G_S84c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S85c (expects file "V2G_S85c.csv")
+New Loadshape.V2G_S85c csvfile="V2G_S85c.csv"
+
+New Storage.V2G_S85c_01  phases=1  bus1=85.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S85c_02  phases=1  bus1=85.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S85c_03  phases=1  bus1=85.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S85c_04  phases=1  bus1=85.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S85c_05  phases=1  bus1=85.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S85c_06  phases=1  bus1=85.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S85c_07  phases=1  bus1=85.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S85c_08  phases=1  bus1=85.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S85c_09  phases=1  bus1=85.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S85c_10  phases=1  bus1=85.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S85c  Mode=FOLLOW  kWTargetShape=V2G_S85c  ElementList=(Storage.V2G_S85c_01 Storage.V2G_S85c_02 Storage.V2G_S85c_03 Storage.V2G_S85c_04 Storage.V2G_S85c_05 Storage.V2G_S85c_06 Storage.V2G_S85c_07 Storage.V2G_S85c_08 Storage.V2G_S85c_09 Storage.V2G_S85c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S86b (expects file "V2G_S86b.csv")
+New Loadshape.V2G_S86b csvfile="V2G_S86b.csv"
+
+New Storage.V2G_S86b_01  phases=1  bus1=86.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S86b_02  phases=1  bus1=86.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S86b_03  phases=1  bus1=86.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S86b_04  phases=1  bus1=86.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S86b_05  phases=1  bus1=86.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S86b_06  phases=1  bus1=86.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S86b_07  phases=1  bus1=86.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S86b_08  phases=1  bus1=86.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S86b_09  phases=1  bus1=86.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S86b_10  phases=1  bus1=86.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S86b  Mode=FOLLOW  kWTargetShape=V2G_S86b  ElementList=(Storage.V2G_S86b_01 Storage.V2G_S86b_02 Storage.V2G_S86b_03 Storage.V2G_S86b_04 Storage.V2G_S86b_05 Storage.V2G_S86b_06 Storage.V2G_S86b_07 Storage.V2G_S86b_08 Storage.V2G_S86b_09 Storage.V2G_S86b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S87b (expects file "V2G_S87b.csv")
+New Loadshape.V2G_S87b csvfile="V2G_S87b.csv"
+
+New Storage.V2G_S87b_01  phases=1  bus1=87.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S87b_02  phases=1  bus1=87.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S87b_03  phases=1  bus1=87.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S87b_04  phases=1  bus1=87.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S87b_05  phases=1  bus1=87.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S87b_06  phases=1  bus1=87.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S87b_07  phases=1  bus1=87.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S87b_08  phases=1  bus1=87.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S87b_09  phases=1  bus1=87.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S87b_10  phases=1  bus1=87.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S87b  Mode=FOLLOW  kWTargetShape=V2G_S87b  ElementList=(Storage.V2G_S87b_01 Storage.V2G_S87b_02 Storage.V2G_S87b_03 Storage.V2G_S87b_04 Storage.V2G_S87b_05 Storage.V2G_S87b_06 Storage.V2G_S87b_07 Storage.V2G_S87b_08 Storage.V2G_S87b_09 Storage.V2G_S87b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S88a (expects file "V2G_S88a.csv")
+New Loadshape.V2G_S88a csvfile="V2G_S88a.csv"
+
+New Storage.V2G_S88a_01  phases=1  bus1=88.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S88a_02  phases=1  bus1=88.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S88a_03  phases=1  bus1=88.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S88a_04  phases=1  bus1=88.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S88a_05  phases=1  bus1=88.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S88a_06  phases=1  bus1=88.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S88a_07  phases=1  bus1=88.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S88a_08  phases=1  bus1=88.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S88a_09  phases=1  bus1=88.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S88a_10  phases=1  bus1=88.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S88a  Mode=FOLLOW  kWTargetShape=V2G_S88a  ElementList=(Storage.V2G_S88a_01 Storage.V2G_S88a_02 Storage.V2G_S88a_03 Storage.V2G_S88a_04 Storage.V2G_S88a_05 Storage.V2G_S88a_06 Storage.V2G_S88a_07 Storage.V2G_S88a_08 Storage.V2G_S88a_09 Storage.V2G_S88a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S90b (expects file "V2G_S90b.csv")
+New Loadshape.V2G_S90b csvfile="V2G_S90b.csv"
+
+New Storage.V2G_S90b_01  phases=1  bus1=90.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S90b_02  phases=1  bus1=90.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S90b_03  phases=1  bus1=90.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S90b_04  phases=1  bus1=90.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S90b_05  phases=1  bus1=90.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S90b_06  phases=1  bus1=90.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S90b_07  phases=1  bus1=90.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S90b_08  phases=1  bus1=90.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S90b_09  phases=1  bus1=90.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S90b_10  phases=1  bus1=90.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S90b  Mode=FOLLOW  kWTargetShape=V2G_S90b  ElementList=(Storage.V2G_S90b_01 Storage.V2G_S90b_02 Storage.V2G_S90b_03 Storage.V2G_S90b_04 Storage.V2G_S90b_05 Storage.V2G_S90b_06 Storage.V2G_S90b_07 Storage.V2G_S90b_08 Storage.V2G_S90b_09 Storage.V2G_S90b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S92c (expects file "V2G_S92c.csv")
+New Loadshape.V2G_S92c csvfile="V2G_S92c.csv"
+
+New Storage.V2G_S92c_01  phases=1  bus1=92.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S92c_02  phases=1  bus1=92.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S92c_03  phases=1  bus1=92.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S92c_04  phases=1  bus1=92.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S92c_05  phases=1  bus1=92.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S92c_06  phases=1  bus1=92.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S92c_07  phases=1  bus1=92.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S92c_08  phases=1  bus1=92.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S92c_09  phases=1  bus1=92.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S92c_10  phases=1  bus1=92.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S92c  Mode=FOLLOW  kWTargetShape=V2G_S92c  ElementList=(Storage.V2G_S92c_01 Storage.V2G_S92c_02 Storage.V2G_S92c_03 Storage.V2G_S92c_04 Storage.V2G_S92c_05 Storage.V2G_S92c_06 Storage.V2G_S92c_07 Storage.V2G_S92c_08 Storage.V2G_S92c_09 Storage.V2G_S92c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S94a (expects file "V2G_S94a.csv")
+New Loadshape.V2G_S94a csvfile="V2G_S94a.csv"
+
+New Storage.V2G_S94a_01  phases=1  bus1=94.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S94a_02  phases=1  bus1=94.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S94a_03  phases=1  bus1=94.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S94a_04  phases=1  bus1=94.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S94a_05  phases=1  bus1=94.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S94a_06  phases=1  bus1=94.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S94a_07  phases=1  bus1=94.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S94a_08  phases=1  bus1=94.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S94a_09  phases=1  bus1=94.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S94a_10  phases=1  bus1=94.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S94a  Mode=FOLLOW  kWTargetShape=V2G_S94a  ElementList=(Storage.V2G_S94a_01 Storage.V2G_S94a_02 Storage.V2G_S94a_03 Storage.V2G_S94a_04 Storage.V2G_S94a_05 Storage.V2G_S94a_06 Storage.V2G_S94a_07 Storage.V2G_S94a_08 Storage.V2G_S94a_09 Storage.V2G_S94a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S95b (expects file "V2G_S95b.csv")
+New Loadshape.V2G_S95b csvfile="V2G_S95b.csv"
+
+New Storage.V2G_S95b_01  phases=1  bus1=95.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S95b_02  phases=1  bus1=95.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S95b_03  phases=1  bus1=95.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S95b_04  phases=1  bus1=95.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S95b_05  phases=1  bus1=95.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S95b_06  phases=1  bus1=95.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S95b_07  phases=1  bus1=95.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S95b_08  phases=1  bus1=95.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S95b_09  phases=1  bus1=95.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S95b_10  phases=1  bus1=95.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S95b  Mode=FOLLOW  kWTargetShape=V2G_S95b  ElementList=(Storage.V2G_S95b_01 Storage.V2G_S95b_02 Storage.V2G_S95b_03 Storage.V2G_S95b_04 Storage.V2G_S95b_05 Storage.V2G_S95b_06 Storage.V2G_S95b_07 Storage.V2G_S95b_08 Storage.V2G_S95b_09 Storage.V2G_S95b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S96b (expects file "V2G_S96b.csv")
+New Loadshape.V2G_S96b csvfile="V2G_S96b.csv"
+
+New Storage.V2G_S96b_01  phases=1  bus1=96.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S96b_02  phases=1  bus1=96.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S96b_03  phases=1  bus1=96.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S96b_04  phases=1  bus1=96.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S96b_05  phases=1  bus1=96.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S96b_06  phases=1  bus1=96.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S96b_07  phases=1  bus1=96.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S96b_08  phases=1  bus1=96.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S96b_09  phases=1  bus1=96.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S96b_10  phases=1  bus1=96.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S96b  Mode=FOLLOW  kWTargetShape=V2G_S96b  ElementList=(Storage.V2G_S96b_01 Storage.V2G_S96b_02 Storage.V2G_S96b_03 Storage.V2G_S96b_04 Storage.V2G_S96b_05 Storage.V2G_S96b_06 Storage.V2G_S96b_07 Storage.V2G_S96b_08 Storage.V2G_S96b_09 Storage.V2G_S96b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S98a (expects file "V2G_S98a.csv")
+New Loadshape.V2G_S98a csvfile="V2G_S98a.csv"
+
+New Storage.V2G_S98a_01  phases=1  bus1=98.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S98a_02  phases=1  bus1=98.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S98a_03  phases=1  bus1=98.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S98a_04  phases=1  bus1=98.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S98a_05  phases=1  bus1=98.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S98a_06  phases=1  bus1=98.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S98a_07  phases=1  bus1=98.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S98a_08  phases=1  bus1=98.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S98a_09  phases=1  bus1=98.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S98a_10  phases=1  bus1=98.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S98a  Mode=FOLLOW  kWTargetShape=V2G_S98a  ElementList=(Storage.V2G_S98a_01 Storage.V2G_S98a_02 Storage.V2G_S98a_03 Storage.V2G_S98a_04 Storage.V2G_S98a_05 Storage.V2G_S98a_06 Storage.V2G_S98a_07 Storage.V2G_S98a_08 Storage.V2G_S98a_09 Storage.V2G_S98a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S99b (expects file "V2G_S99b.csv")
+New Loadshape.V2G_S99b csvfile="V2G_S99b.csv"
+
+New Storage.V2G_S99b_01  phases=1  bus1=99.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S99b_02  phases=1  bus1=99.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S99b_03  phases=1  bus1=99.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S99b_04  phases=1  bus1=99.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S99b_05  phases=1  bus1=99.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S99b_06  phases=1  bus1=99.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S99b_07  phases=1  bus1=99.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S99b_08  phases=1  bus1=99.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S99b_09  phases=1  bus1=99.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S99b_10  phases=1  bus1=99.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S99b  Mode=FOLLOW  kWTargetShape=V2G_S99b  ElementList=(Storage.V2G_S99b_01 Storage.V2G_S99b_02 Storage.V2G_S99b_03 Storage.V2G_S99b_04 Storage.V2G_S99b_05 Storage.V2G_S99b_06 Storage.V2G_S99b_07 Storage.V2G_S99b_08 Storage.V2G_S99b_09 Storage.V2G_S99b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S100c (expects file "V2G_S100c.csv")
+New Loadshape.V2G_S100c csvfile="V2G_S100c.csv"
+
+New Storage.V2G_S100c_01  phases=1  bus1=100.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S100c_02  phases=1  bus1=100.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S100c_03  phases=1  bus1=100.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S100c_04  phases=1  bus1=100.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S100c_05  phases=1  bus1=100.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S100c_06  phases=1  bus1=100.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S100c_07  phases=1  bus1=100.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S100c_08  phases=1  bus1=100.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S100c_09  phases=1  bus1=100.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S100c_10  phases=1  bus1=100.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S100c  Mode=FOLLOW  kWTargetShape=V2G_S100c  ElementList=(Storage.V2G_S100c_01 Storage.V2G_S100c_02 Storage.V2G_S100c_03 Storage.V2G_S100c_04 Storage.V2G_S100c_05 Storage.V2G_S100c_06 Storage.V2G_S100c_07 Storage.V2G_S100c_08 Storage.V2G_S100c_09 Storage.V2G_S100c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S102c (expects file "V2G_S102c.csv")
+New Loadshape.V2G_S102c csvfile="V2G_S102c.csv"
+
+New Storage.V2G_S102c_01  phases=1  bus1=102.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S102c_02  phases=1  bus1=102.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S102c_03  phases=1  bus1=102.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S102c_04  phases=1  bus1=102.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S102c_05  phases=1  bus1=102.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S102c_06  phases=1  bus1=102.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S102c_07  phases=1  bus1=102.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S102c_08  phases=1  bus1=102.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S102c_09  phases=1  bus1=102.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S102c_10  phases=1  bus1=102.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S102c  Mode=FOLLOW  kWTargetShape=V2G_S102c  ElementList=(Storage.V2G_S102c_01 Storage.V2G_S102c_02 Storage.V2G_S102c_03 Storage.V2G_S102c_04 Storage.V2G_S102c_05 Storage.V2G_S102c_06 Storage.V2G_S102c_07 Storage.V2G_S102c_08 Storage.V2G_S102c_09 Storage.V2G_S102c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S103c (expects file "V2G_S103c.csv")
+New Loadshape.V2G_S103c csvfile="V2G_S103c.csv"
+
+New Storage.V2G_S103c_01  phases=1  bus1=103.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S103c_02  phases=1  bus1=103.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S103c_03  phases=1  bus1=103.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S103c_04  phases=1  bus1=103.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S103c_05  phases=1  bus1=103.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S103c_06  phases=1  bus1=103.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S103c_07  phases=1  bus1=103.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S103c_08  phases=1  bus1=103.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S103c_09  phases=1  bus1=103.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S103c_10  phases=1  bus1=103.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S103c  Mode=FOLLOW  kWTargetShape=V2G_S103c  ElementList=(Storage.V2G_S103c_01 Storage.V2G_S103c_02 Storage.V2G_S103c_03 Storage.V2G_S103c_04 Storage.V2G_S103c_05 Storage.V2G_S103c_06 Storage.V2G_S103c_07 Storage.V2G_S103c_08 Storage.V2G_S103c_09 Storage.V2G_S103c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S104c (expects file "V2G_S104c.csv")
+New Loadshape.V2G_S104c csvfile="V2G_S104c.csv"
+
+New Storage.V2G_S104c_01  phases=1  bus1=104.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S104c_02  phases=1  bus1=104.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S104c_03  phases=1  bus1=104.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S104c_04  phases=1  bus1=104.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S104c_05  phases=1  bus1=104.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S104c_06  phases=1  bus1=104.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S104c_07  phases=1  bus1=104.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S104c_08  phases=1  bus1=104.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S104c_09  phases=1  bus1=104.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S104c_10  phases=1  bus1=104.3  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S104c  Mode=FOLLOW  kWTargetShape=V2G_S104c  ElementList=(Storage.V2G_S104c_01 Storage.V2G_S104c_02 Storage.V2G_S104c_03 Storage.V2G_S104c_04 Storage.V2G_S104c_05 Storage.V2G_S104c_06 Storage.V2G_S104c_07 Storage.V2G_S104c_08 Storage.V2G_S104c_09 Storage.V2G_S104c_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S106b (expects file "V2G_S106b.csv")
+New Loadshape.V2G_S106b csvfile="V2G_S106b.csv"
+
+New Storage.V2G_S106b_01  phases=1  bus1=106.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S106b_02  phases=1  bus1=106.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S106b_03  phases=1  bus1=106.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S106b_04  phases=1  bus1=106.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S106b_05  phases=1  bus1=106.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S106b_06  phases=1  bus1=106.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S106b_07  phases=1  bus1=106.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S106b_08  phases=1  bus1=106.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S106b_09  phases=1  bus1=106.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S106b_10  phases=1  bus1=106.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S106b  Mode=FOLLOW  kWTargetShape=V2G_S106b  ElementList=(Storage.V2G_S106b_01 Storage.V2G_S106b_02 Storage.V2G_S106b_03 Storage.V2G_S106b_04 Storage.V2G_S106b_05 Storage.V2G_S106b_06 Storage.V2G_S106b_07 Storage.V2G_S106b_08 Storage.V2G_S106b_09 Storage.V2G_S106b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S107b (expects file "V2G_S107b.csv")
+New Loadshape.V2G_S107b csvfile="V2G_S107b.csv"
+
+New Storage.V2G_S107b_01  phases=1  bus1=107.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S107b_02  phases=1  bus1=107.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S107b_03  phases=1  bus1=107.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S107b_04  phases=1  bus1=107.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S107b_05  phases=1  bus1=107.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S107b_06  phases=1  bus1=107.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S107b_07  phases=1  bus1=107.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S107b_08  phases=1  bus1=107.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S107b_09  phases=1  bus1=107.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S107b_10  phases=1  bus1=107.2  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S107b  Mode=FOLLOW  kWTargetShape=V2G_S107b  ElementList=(Storage.V2G_S107b_01 Storage.V2G_S107b_02 Storage.V2G_S107b_03 Storage.V2G_S107b_04 Storage.V2G_S107b_05 Storage.V2G_S107b_06 Storage.V2G_S107b_07 Storage.V2G_S107b_08 Storage.V2G_S107b_09 Storage.V2G_S107b_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S109a (expects file "V2G_S109a.csv")
+New Loadshape.V2G_S109a csvfile="V2G_S109a.csv"
+
+New Storage.V2G_S109a_01  phases=1  bus1=109.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S109a_02  phases=1  bus1=109.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S109a_03  phases=1  bus1=109.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S109a_04  phases=1  bus1=109.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S109a_05  phases=1  bus1=109.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S109a_06  phases=1  bus1=109.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S109a_07  phases=1  bus1=109.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S109a_08  phases=1  bus1=109.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S109a_09  phases=1  bus1=109.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S109a_10  phases=1  bus1=109.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S109a  Mode=FOLLOW  kWTargetShape=V2G_S109a  ElementList=(Storage.V2G_S109a_01 Storage.V2G_S109a_02 Storage.V2G_S109a_03 Storage.V2G_S109a_04 Storage.V2G_S109a_05 Storage.V2G_S109a_06 Storage.V2G_S109a_07 Storage.V2G_S109a_08 Storage.V2G_S109a_09 Storage.V2G_S109a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S111a (expects file "V2G_S111a.csv")
+New Loadshape.V2G_S111a csvfile="V2G_S111a.csv"
+
+New Storage.V2G_S111a_01  phases=1  bus1=111.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S111a_02  phases=1  bus1=111.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S111a_03  phases=1  bus1=111.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S111a_04  phases=1  bus1=111.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S111a_05  phases=1  bus1=111.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S111a_06  phases=1  bus1=111.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S111a_07  phases=1  bus1=111.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S111a_08  phases=1  bus1=111.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S111a_09  phases=1  bus1=111.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S111a_10  phases=1  bus1=111.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S111a  Mode=FOLLOW  kWTargetShape=V2G_S111a  ElementList=(Storage.V2G_S111a_01 Storage.V2G_S111a_02 Storage.V2G_S111a_03 Storage.V2G_S111a_04 Storage.V2G_S111a_05 Storage.V2G_S111a_06 Storage.V2G_S111a_07 Storage.V2G_S111a_08 Storage.V2G_S111a_09 Storage.V2G_S111a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S112a (expects file "V2G_S112a.csv")
+New Loadshape.V2G_S112a csvfile="V2G_S112a.csv"
+
+New Storage.V2G_S112a_01  phases=1  bus1=112.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S112a_02  phases=1  bus1=112.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S112a_03  phases=1  bus1=112.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S112a_04  phases=1  bus1=112.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S112a_05  phases=1  bus1=112.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S112a_06  phases=1  bus1=112.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S112a_07  phases=1  bus1=112.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S112a_08  phases=1  bus1=112.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S112a_09  phases=1  bus1=112.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S112a_10  phases=1  bus1=112.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S112a  Mode=FOLLOW  kWTargetShape=V2G_S112a  ElementList=(Storage.V2G_S112a_01 Storage.V2G_S112a_02 Storage.V2G_S112a_03 Storage.V2G_S112a_04 Storage.V2G_S112a_05 Storage.V2G_S112a_06 Storage.V2G_S112a_07 Storage.V2G_S112a_08 Storage.V2G_S112a_09 Storage.V2G_S112a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S113a (expects file "V2G_S113a.csv")
+New Loadshape.V2G_S113a csvfile="V2G_S113a.csv"
+
+New Storage.V2G_S113a_01  phases=1  bus1=113.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S113a_02  phases=1  bus1=113.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S113a_03  phases=1  bus1=113.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S113a_04  phases=1  bus1=113.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S113a_05  phases=1  bus1=113.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S113a_06  phases=1  bus1=113.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S113a_07  phases=1  bus1=113.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S113a_08  phases=1  bus1=113.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S113a_09  phases=1  bus1=113.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S113a_10  phases=1  bus1=113.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S113a  Mode=FOLLOW  kWTargetShape=V2G_S113a  ElementList=(Storage.V2G_S113a_01 Storage.V2G_S113a_02 Storage.V2G_S113a_03 Storage.V2G_S113a_04 Storage.V2G_S113a_05 Storage.V2G_S113a_06 Storage.V2G_S113a_07 Storage.V2G_S113a_08 Storage.V2G_S113a_09 Storage.V2G_S113a_10)  KWTarget=0  PFTarget=1.0
+
+
+! --- Profiles for V2G_S114a (expects file "V2G_S114a.csv")
+New Loadshape.V2G_S114a csvfile="V2G_S114a.csv"
+
+New Storage.V2G_S114a_01  phases=1  bus1=114.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S114a_02  phases=1  bus1=114.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S114a_03  phases=1  bus1=114.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S114a_04  phases=1  bus1=114.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S114a_05  phases=1  bus1=114.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S114a_06  phases=1  bus1=114.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S114a_07  phases=1  bus1=114.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S114a_08  phases=1  bus1=114.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S114a_09  phases=1  bus1=114.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+New Storage.V2G_S114a_10  phases=1  bus1=114.1  conn=Wye  kV=2.4  kWRated=7  kWhRated=70  %reserve=10  %EffCharge=95  %EffDischarge=95  State=IDLING
+
+New StorageController.SC_S114a  Mode=FOLLOW  kWTargetShape=V2G_S114a  ElementList=(Storage.V2G_S114a_01 Storage.V2G_S114a_02 Storage.V2G_S114a_03 Storage.V2G_S114a_04 Storage.V2G_S114a_05 Storage.V2G_S114a_06 Storage.V2G_S114a_07 Storage.V2G_S114a_08 Storage.V2G_S114a_09 Storage.V2G_S114a_10)  KWTarget=0  PFTarget=1.0
+
