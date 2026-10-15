@@ -21,7 +21,7 @@
 
 ## 2. File Names and Folder Structure
 
-'''text
+```text
 project/
 ├── README.md                  # Project overview and instructions
 ├── requirements.txt           # Python dependencies
@@ -40,7 +40,7 @@ project/
 │   └── ...                    # Load and generation profiles
 ├── vpp_forecast_output/       # Generated VPP forecast data
 └── results/                   # Training and evaluation outputs
-'''
+```
 
 ## 3. Execution and Results
 
